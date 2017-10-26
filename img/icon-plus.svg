@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #009fe3;
+        stroke-width: 1.41px;
+      }
+    </style>
+  </defs>
+  <title>icon-plus</title>
+  <g>
+    <line class="cls-1" x1="6.5" x2="6.5" y2="13"/>
+    <line class="cls-1" y1="6.5" x2="13" y2="6.5"/>
+  </g>
+</svg>
