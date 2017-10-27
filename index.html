@@ -7,19 +7,21 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__top wrapper">
+  <header class="header wrapper">
+    <div class="header__top">
       <div class="logo">
         <img src="img/logo.svg" alt="Logo" class="logo__img" width="142" height="49">
         <p class="logo__text">Профессиональные системы полива из США и Европы</p>
       </div>
-      <a href="#" class="cart">Товаров в корзине<span>12</span></a>
       <div class="user">
-        <a href="#" class="user__link">Вход для юр. лиц</a>
-        <a href="#" class="user__link">Регистрация</a>
+        <a href="#" class="user__link user__link--cart"><span>Товаров в корзине: <b>12</b></span></a>
+        <div class="user__login">
+          <a href="#" class="user__link user__link--login"><span>Вход для юр. лиц</span></a>
+          <a href="#" class="user__link"><span>Регистрация</span></a>
+        </div>
       </div>
       <div class="call">
-        <a href="Tel:+78002502932" class="call__phone">
+        <a href="Tel:+78002502932" class="call__phone call__phone--header">
           <p class="call__number">8 800 250-29-32</p>
           <span class="call__text">Бесплатный звонок</span>
         </a>
@@ -31,70 +33,78 @@
       <ul class="menu__list">
         <li class="menu__item">
           <a href="#" class="menu__link">Компания</a>
-          <input type="radio" name="menu" id="drop-1" class="menu__drop">
+          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
           <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
-          <ul class="menu__sublist">
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Пункт 1</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Пункт 2</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Пункт 3</a>
-            </li>
-          </ul>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 1</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 2</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 3</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Каталог</a>
+          <a href="#" class="menu__link menu__link--active">Каталог</a>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Услуги</a>
-          <input type="radio" name="menu" id="drop-1" class="menu__drop">
+          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
           <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
-          <ul class="menu__sublist">
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Продажа</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Проектирование</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Монтаж</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Обслуживание</a>
-            </li>
-          </ul>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Продажа</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Проектирование</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Монтаж</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Обслуживание</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Покупателю</a>
-          <input type="radio" name="menu" id="drop-1" class="menu__drop">
+          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
           <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
-          <ul class="menu__sublist">
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Пункт 1</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Пункт 2</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Пункт 3</a>
-            </li>
-          </ul>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 1</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 2</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 3</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Для бизнеса</a>
-          <input type="radio" name="menu" id="drop-1" class="menu__drop">
+          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
           <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
-          <ul class="menu__sublist">
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Пункт 1</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Пункт 2</a>
-            </li>
-          </ul>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 1</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 2</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
       <form action="#" method="get" class="search">
