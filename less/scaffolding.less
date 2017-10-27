@@ -1,7 +1,7 @@
 body {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "PT Astra Sans", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 22px;
   font-weight: 400;
 }
 
@@ -10,7 +10,31 @@ img {
   height: auto;
 }
 
-* {
+a {
+  text-decoration: none;
+}
+
+html {
   box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ul {
+  .reset();
+  list-style-type: none;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}

@@ -1,15 +1,335 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta  name="viewport" content="width=device-width,initial-scale=1">
-    <title>Title</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic">
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Системы автоматического полива HUNTER</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header__top wrapper">
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logo" class="logo__img" width="142" height="49">
+        <p class="logo__text">Профессиональные системы полива из США и Европы</p>
+      </div>
+      <a href="#" class="cart">Товаров в корзине<span>12</span></a>
+      <div class="user">
+        <a href="#" class="user__link">Вход для юр. лиц</a>
+        <a href="#" class="user__link">Регистрация</a>
+      </div>
+      <div class="call">
+        <a href="Tel:+78002502932" class="call__phone">
+          <p class="call__number">8 800 250-29-32</p>
+          <span class="call__text">Бесплатный звонок</span>
+        </a>
+        <button type="button" class="btn call__btn">Перезвоните мне</button>
+      </div>
+    </div>
+    <nav class="menu menu--closed">
+      <button class="menu__btn"><span class="visually-hidden">Закрыть/Открыть меню</span></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Компания</a>
+          <input type="radio" name="menu" id="drop-1" class="menu__drop">
+          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Пункт 1</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Пункт 2</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Пункт 3</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Каталог</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Услуги</a>
+          <input type="radio" name="menu" id="drop-1" class="menu__drop">
+          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Продажа</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Проектирование</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Монтаж</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Обслуживание</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Покупателю</a>
+          <input type="radio" name="menu" id="drop-1" class="menu__drop">
+          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Пункт 1</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Пункт 2</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Пункт 3</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Для бизнеса</a>
+          <input type="radio" name="menu" id="drop-1" class="menu__drop">
+          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Пункт 1</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Пункт 2</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form action="#" method="get" class="search">
+        <div class="search__wrap">
+          <input type="text" name="search" class="search__input" placeholder="Поиск">
+          <button type="submit" class="search__btn"><span class="visually-hidden">Найти</span></button>
+        </div>
+      </form>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="promo wrapper">
+      <h1 class="promo__h1">Системы автоматического полива HUNTER</h1>
+      <a href="catalog.html" class="promo__link">460 товаров</a>
+    </section>
     
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/script.js"></script>
+    <section class="catalog wrapper">
+      <h2 class="title-h2">Каталог</h2>
+      <div class="catalog__wrap">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Веерные дождеватели</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Роторные дождеватели</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Сопла</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Электромагнитные клапаны</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Контроллеры</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Датчики</a>
+          </li>
+        </ul>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Комплектующие</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Компрессионные фитинги</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Насосное оборудование</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Электрощитовое оборудование</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Трубы</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Емкости</a>
+          </li>
+        </ul>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Капельный полив</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Фильтры</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Инженерная сантехника</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">Запчасти</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="service wrapper">
+      <h2 class="title-h2">Наши услуги</h2>
+      <div class="service__list">
+        <a href="#" class="service__item">
+          <h3 class="title-h3">Продажа</h3>
+        </a>
+        <a href="#" class="service__item">
+          <h3 class="title-h3">Проектирование</h3>
+        </a>
+        <a href="#" class="service__item">
+          <h3 class="title-h3">Монтаж</h3>
+        </a>
+        <a href="#" class="service__item">
+          <h3 class="title-h3">Обслуживание</h3>
+        </a>
+      </div>
+    </section>
+    
+    <section class="brief wrapper">
+      <h2 class="title-h2">Заполните бриф на проект</h2>
+      <form action="#" method="post" class="brief__form">
+        <div class="brief__wrap">
+          <div class="brief__field">
+            <label for="name" class="brief__label">Ваше имя:</label>
+            <input type="text" name="name" id="name" class="brief__input">
+          </div>
+          <div class="brief__field">
+            <label for="phone" class="brief__label">Номер телефона:</label>
+            <input type="tel" name="phone" id="phone" class="brief__input">
+          </div>
+          <div class="brief__field">
+            <label for="height" class="brief__label">Перепад высоты:</label>
+            <input type="text" name="height" id="height" class="brief__input">
+            <span class="brief__comment">Укажите, имеется ли перепад высот и его размер</span>
+          </div>
+          <div class="brief__field">
+            <label for="source" class="brief__label">Источник воды на участке:</label>
+            <select name="source" id="source" class="brief__select">
+              <option value="0">Выбрать</option>
+              <option value="1">Источник 1</option>
+              <option value="2">Источник 2</option>
+            </select>
+          </div>
+          <div class="brief__field">
+            <label for="file" class="brief__label">Источник воды на участке:</label>
+            <input type="file" name="file" id="file" class="brief__input" placeholder="Загрузить файл">
+            <span class="brief__comment">Ваша конфиденциальность очень важна для нас. Мы хотим, чтобы Ваша работа в Интернете, по возможности, была максимально приятной и полезной.</span>
+          </div>
+        </div>
+        <div class="brief__wrap">
+          <div class="brief__field">
+            <label for="email" class="brief__label">Ваш Email:</label>
+            <input type="email" name="email" id="email" class="brief__input">
+          </div>
+          <div class="brief__field">
+            <label for="object" class="brief__label">Название объекта:</label>
+            <input type="text" name="object" id="object" class="brief__input">
+            <span class="brief__comment">Название поселка, дачного кооператива или улицы</span>
+          </div>
+          <div class="brief__field">
+            <label for="distance" class="brief__label">Удаленность участка от СПб:</label>
+            <input type="text" name="distance" id="distance" class="brief__input">
+          </div>
+          <div class="brief__field">
+            <span class="brief__label">Полив дорожек:</span>
+            <div class="brief__wrap">
+              <input type="radio" name="water" id="water-yes" class="brief__radio" checked>
+              <label for="water-yes" class="brief__label">Да</label>
+              <input type="radio" name="water" id="water-no" class="brief__radio">
+              <label for="water-no" class="brief__label">Нет</label>
+            </div>
+            <span class="brief__comment">Отказ от полива дорожек может привести к увеличению стоимости на 30-50%</span>
+          </div>
+        </div>
+        <div class="brief__wrap">
+          <div class="brief__field">
+            <label for="comment" class="brief__label">Ваш комментарий:</label>
+            <textarea name="comment" id="comment" class="brief__area"></textarea>
+          </div>
+          <button type="submit" class="btn brief__btn">Получить скидку</button>
+        </div>
+      </form>
+    </section>
+    
+    <section class="application wrapper">
+      <h2 class="title-h2">Сферы применения</h2>
+      <div class="application__list">
+        <a href="#" class="application__item">
+          <h3 class="title-h3">Спортивные объекты</h3>
+        </a>
+        <a href="#" class="application__item">
+          <h3 class="title-h3">Общественные территории</h3>
+        </a>
+        <a href="#" class="application__item">
+          <h3 class="title-h3">Сельское хозяйство</h3>
+        </a>
+        <a href="#" class="application__item">
+          <h3 class="title-h3">Частные домовладения</h3>
+        </a>
+      </div>
+    </section>
+    
+    <section class="brand wrapper-slider">
+      <h2 class="title-h2">Используемые бренды</h2>
+      <ul class="brand__slider">
+        <li class="brand__slide">
+          <img src="img/logo-irritec.jpg" alt="" width="250" height="59">
+        </li>
+        <li class="brand__slide">
+          <img src="img/logo-anion.jpg" alt="" width="172" height="39">
+        </li>
+        <li class="brand__slide">
+          <img src="img/logo-espa.jpg" alt="" width="172" height="59">
+        </li>
+        <li class="brand__slide">
+          <img src="img/logo-hunter.jpg" alt="" width="217" height="49">
+        </li>
+        <li class="brand__slide">
+          <img src="img/logo-raindrip.jpg" alt="" width="237" height="58">
+        </li>
+      </ul>
+    </section>
+    
+    <section class="contacts wrapper">
+      <h2 class="title-h2">Контакты</h2>
+      <div class="contacts__map"></div>
+      <div class="contacts__wrap">
+        <address class="contacts__text">Санкт-Петербург, улица Ворошилова, д. 6А, офис 203</address>
+        <p class="contacts__text">Мы работаем ежедневно с 10:00 до 19:00</p>
+        <div class="call">
+          <a href="Tel:+78002502932" class="call__phone">
+            <p class="call__number">8 800 250-29-32</p>
+            <span class="call__text">Бесплатный звонок</span>
+          </a>
+          <button type="button" class="btn call__btn">Перезвоните мне</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer wrapper">
+    <div class="footer__wrap">
+      <p class="footer__copyright">© 2017 Hunter</p>
+      <a href="#" class="footer__link">Политика конфиденциальности</a>
+    </div>
+    <div class="social">
+      <a href="#" class="social__link">
+        <img src="img/icon-fb.svg" alt="Facebook" class="social__img" width="23" height="23">
+      </a>
+      <a href="#" class="social__link">
+        <img src="img/icon-tw.svg" alt="Twitter" class="social__img" width="23" height="23">
+      </a>
+      <a href="#" class="social__link">
+        <img src="img/icon-google.svg" alt="Google plus" class="social__img" width="23" height="23">
+      </a>
+    </div>
+  </footer>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
