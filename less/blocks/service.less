@@ -1,0 +1,58 @@
+.service {
+  margin-bottom: 80px;
+}
+
+.service__item {
+  display: flex;
+  width: 390px;
+  height: 290px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  &--sell {
+    background-image: url(../img/service-img-1.jpg);
+    width: 795px;
+  }
+  
+  &--right {
+    background-image: url(../img/service-img-2.jpg);
+    height: 595px;
+  }
+  
+  &--project {
+    background-image: url(../img/service-img-3.jpg);
+    margin-top: auto;
+  }
+  
+  &--montage {
+    background-image: url(../img/service-img-4.jpg);
+    margin-top: auto;
+  }
+  
+  &:hover,
+  &:active {
+    outline: 6px solid @blue;
+    outline-offset: -6px;
+  }
+}
+
+.service__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.service__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 795px;
+}
+
+.service__title {
+  margin-top: auto;
+}
