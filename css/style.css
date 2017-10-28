@@ -701,3 +701,106 @@ button {
 .promo__link:active {
   opacity: 0.8;
 }
+.catalog {
+  margin-bottom: 80px;
+}
+.catalog__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  padding: 55px 90px 48px 30px;
+  background-image: url(../img/bg-main-blue.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.catalog__link {
+  color: #fff;
+  font-size: 19px;
+  line-height: 40px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  border-bottom: 1px dotted #fff;
+}
+.catalog__link:hover,
+.catalog__link:active {
+  border-bottom: 1px solid #fff;
+}
+.catalog__list {
+  padding-right: 10px;
+}
+h2,
+.title-h2 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+.title-h3 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+}
+.title-h3 span {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff;
+}
+.service {
+  margin-bottom: 80px;
+}
+.service__item {
+  display: -ms-flexbox;
+  display: flex;
+  width: 390px;
+  height: 290px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.service__item--sell {
+  background-image: url(../img/service-img-1.jpg);
+  width: 795px;
+}
+.service__item--right {
+  background-image: url(../img/service-img-2.jpg);
+  height: 595px;
+}
+.service__item--project {
+  background-image: url(../img/service-img-3.jpg);
+  margin-top: auto;
+}
+.service__item--montage {
+  background-image: url(../img/service-img-4.jpg);
+  margin-top: auto;
+}
+.service__item:hover,
+.service__item:active {
+  outline: 6px solid #00adef;
+  outline-offset: -6px;
+}
+.service__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  width: 100%;
+}
+.service__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  width: 795px;
+}
+.service__title {
+  margin-top: auto;
+}
