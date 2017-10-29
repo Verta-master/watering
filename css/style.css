@@ -594,7 +594,7 @@ button {
   line-height: 40px;
   display: block;
   width: 100%;
-  border-bottom: 1px dotted #e6e7e8;
+  border-bottom: 1px dotted #bbbdc0;
 }
 .menu__sublink:hover,
 .menu__sublink:active {
@@ -615,7 +615,7 @@ button {
 .menu__sublist {
   padding: 0 20px;
   background-color: #fff;
-  border: 1px solid #e6e7e8;
+  border: 1px solid #bbbdc0;
   min-width: 166px;
 }
 .menu__sublist::after {
@@ -626,7 +626,7 @@ button {
   width: 15px;
   height: 15px;
   background-color: #fff;
-  border: 1px solid #e6e7e8;
+  border: 1px solid #bbbdc0;
   border-right: none;
   border-bottom: none;
   transform: rotate(45deg) translateX(-50%);
@@ -638,7 +638,7 @@ button {
       justify-content: flex-end;
   -ms-flex-align: center;
       align-items: center;
-  border: 1px solid #e6e7e8;
+  border: 1px solid #bbbdc0;
 }
 .search__input {
   border: none;
@@ -803,4 +803,156 @@ h2,
 }
 .service__title {
   margin-top: auto;
+}
+.brief {
+  margin-bottom: 85px;
+}
+.brief__form {
+  padding: 50px 45px;
+  border: 6px solid #00adef;
+}
+.brief__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.brief__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.brief__label {
+  display: block;
+  padding-bottom: 5px;
+}
+.brief__label--radio {
+  cursor: pointer;
+  position: relative;
+  margin-right: 25px;
+  padding-left: 30px;
+}
+.brief__label--radio span {
+  border-bottom: 1px dotted #00adef;
+}
+.brief__label--radio:hover span,
+.brief__label--radio:active span {
+  border-bottom: 1px solid #00adef;
+}
+.brief__label--radio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #00adef;
+}
+.brief__label--radio::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 12px;
+  height: 12px;
+  background-color: #78be42;
+}
+.brief__label--source {
+  cursor: pointer;
+}
+.brief__label--source:hover,
+.brief__label--source:active {
+  color: #78be42;
+}
+.brief__input {
+  width: 189px;
+  height: 26px;
+  border: 1px solid #00adef;
+  margin-right: 37px;
+  padding: 0 10px;
+}
+.brief__comment {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #bbbdc0;
+  padding-top: 12px;
+  max-width: 155px;
+}
+.brief__comment--margin {
+  margin-bottom: 45px;
+}
+.brief__area {
+  display: block;
+  border: 1px solid #00adef;
+  padding: 10px;
+  width: 641px;
+  height: 104px;
+  margin-right: 38px;
+}
+.brief__btn {
+  font-size: 22px;
+  line-height: 27px;
+  width: 255px;
+  min-height: 51px;
+  margin-top: auto;
+}
+.brief__field {
+  position: relative;
+}
+.brief__field--wide {
+  margin-top: -40px;
+}
+.brief__file,
+.brief__drop,
+.brief__radio {
+  display: none;
+}
+.brief__radio:checked + .brief__label--radio::after {
+  display: block;
+}
+.brief__select {
+  display: block;
+  color: #bbbdc0;
+  width: 188px;
+  height: 26px;
+  padding-left: 10px;
+  margin-right: 38px;
+  border: 1px solid #00adef;
+  background-image: url(../img/icon-select.svg);
+  background-repeat: no-repeat;
+  background-size: 8px 5px;
+  background-position: 96% center;
+  cursor: pointer;
+}
+.brief__source {
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 188px;
+  padding: 0 10px;
+  background-color: #fff;
+  border: 1px solid #00adef;
+  border-top: none;
+  z-index: 5;
+}
+.brief__drop:checked ~ .brief__source {
+  display: block;
+}
+.brief__upload {
+  display: block;
+  width: 188px;
+  height: 25px;
+  background-color: #f1f2f2;
+  padding-left: 10px;
+  background-image: url(../img/icon-plus.svg);
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-position: 96% center;
+  cursor: pointer;
 }
