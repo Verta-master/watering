@@ -1,0 +1,300 @@
+@media (max-width: 1200px) {
+  .wrapper {
+    width: ~"calc(100% - 40px)";
+  }
+  
+  .brand {
+    width: ~"calc(100% - 20px)";
+  }
+  
+  .call__number {
+    font-size: 16px;
+  }
+  
+  .user {
+    margin-right: 0;
+  }
+  
+  .user__link--cart {
+    margin-right: 20px;
+  }
+  
+  .catalog__wrap {
+    padding-right: 30px;
+  }
+  
+  .service__wrap {
+    width: 64%;
+  }
+  
+  .service__item {
+    width: 48%;
+    
+    &--wide {
+      width: 100%;
+    }
+    
+    &--tall {
+      width: 34%;
+    }
+  }
+  
+  .brief__field {
+    &--wide {
+      margin-top: 10px;
+    }
+  }
+  
+  .brief__select {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .brief__form {
+    padding: 20px;
+  }
+  
+  .brief__wrap {
+    flex-wrap: wrap;
+  }
+  
+  .brief__select,
+  .brief__input {
+    margin-right: 0;
+  }
+  
+  .brief__field {
+    margin-right: 20px;
+  }
+  
+  .brief__btn {
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .title-h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    left: 15px;
+  }
+  
+  .catalog__link {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  
+  .header__top {
+    flex-wrap: wrap;
+  }
+  
+  .call {
+    margin-left: auto;
+  }
+  
+  .call__phone {
+    margin-right: 20px;
+  }
+  
+  .contacts__text {
+    max-width: 200px;
+    padding-right: 25px;
+  }
+  
+  .contacts__info {
+    padding-top: 0;
+  }
+  
+  .contacts__wrap {
+    align-items: baseline;
+    padding-left: 0;
+  }
+  
+  .menu {
+    padding-right: 20px;
+    position: relative;
+  }
+  
+  .menu__btn {
+    display: block;
+  }
+  
+  .menu--closed {
+    .menu__btn {
+      background-image: url(../img/icon-menu-ham.svg);
+    }
+    
+    .menu__list {
+      display: none;
+    }
+  }
+  
+  .menu--opened {
+    .menu__btn {
+      background-image: url(../img/icon-menu-cross.svg);
+    }
+  
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      padding: 20px 40px 0 20px;
+      background-color: #fff;
+      z-index: 20;
+    }
+    
+    .menu__item {
+      margin-left: 0;
+      margin-bottom: 20px;
+      
+      &:hover {
+        .menu__sublist-wrap {
+          display: none;
+        }
+      }
+    }
+    
+    .menu__arrow {
+      right: -25px;
+      cursor: pointer;
+      transform: rotate(-90deg);
+    }
+    
+    .menu__sublist-wrap {
+      top: -20px;
+      left: 200%;
+      padding-top: 0;
+    }
+    
+    .menu__sublist::after {
+      top: 20px;
+      left: -8px;
+      transform: rotate(-45deg) translate(0);
+    }
+    
+    .menu__drop:checked ~ .menu__sublist-wrap {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 766px) {
+  .wrapper {
+    width: ~"calc(100% - 20px)";
+  }
+  
+  .user {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .promo {
+    min-height: 200px;
+    padding-left: 20px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .promo__h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  .promo__link {
+    right: 0;
+    left: auto;
+    top: 100%;
+  }
+  
+  .title-h2, h2 {
+    font-size: 30px;
+  }
+  
+  .catalog__wrap {
+    flex-wrap: wrap;
+  }
+  
+  .brand,
+  .brief,
+  .service,
+  .catalog {
+    margin-bottom: 40px;
+  }
+  
+  .service__list {
+    flex-wrap: wrap;
+  }
+  
+  .service__item,
+  .service__wrap {
+    width: 100%;
+  }
+  
+  .service__item {
+    margin-bottom: 15px;
+    
+    &--tall {
+      height: 290px;
+    }
+  }
+  
+  .brief__area {
+    width: 100%;
+  }
+  
+  .contacts__wrap {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .contacts__text {
+    max-width: 280px;
+    padding-left: 10px;
+  }
+  
+  .call {
+    margin-right: auto;
+  }
+  
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__wrap {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer__copyright {
+    display: block;
+  }
+  
+  .footer__link {
+    margin-left: 0;
+  }
+  
+  .modal {
+    border: 20px solid #fff;
+  }
+  
+  .modal__title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  .modal__content {
+    width: 240px;
+  }
+  
+  .modal__text,
+  .modal__label {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}

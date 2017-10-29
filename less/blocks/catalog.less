@@ -1,12 +1,12 @@
 .catalog {
-  margin-bottom: 80px;
+  margin-bottom: 67px;
 }
 
 .catalog__wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 55px 90px 48px 30px;
+  padding: 45px 90px 48px 30px;
   background-image: url(../img/bg-main-blue.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -14,14 +14,18 @@
 }
 
 .catalog__link {
+  display: block;
   color: #fff;
   font-size: 19px;
   line-height: 40px;
   font-family: "Open Sans", "Arial", sans-serif;
-  border-bottom: 1px dotted #fff;
   
-  &:hover,
-  &:active {
+  span {
+    border-bottom: 1px dotted #fff;
+  }
+  
+  &:hover span,
+  &:active span {
     border-bottom: 1px solid #fff;
   }
 }
