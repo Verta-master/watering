@@ -17,7 +17,7 @@
         <a href="#" class="user__link user__link--cart"><span>Товаров в корзине: <b>12</b></span></a>
         <div class="user__login">
           <a href="#" class="user__link user__link--login"><span>Вход для юр. лиц</span></a>
-          <a href="#" class="user__link"><span>Регистрация</span></a>
+          <a href="#" class="user__link user__link--reg"><span>Регистрация</span></a>
         </div>
       </div>
       <div class="call">
@@ -336,7 +336,7 @@
     
     <section class="contacts wrapper">
       <h2 class="title-h2">Контакты</h2>
-      <div class="contacts__map"></div>
+      <div class="contacts__map" id="map"></div>
       <div class="contacts__wrap">
         <address class="contacts__text">Санкт-Петербург,<br>улица Ворошилова, д. 6А, офис 203</address>
         <p class="contacts__info">Мы работаем ежедневно с 10:00 до 19:00</p>
@@ -369,8 +369,85 @@
     </div>
   </footer>
   
+<!-- Call window -->
+  <div style="display: none;">
+    <div class="modal" id="modal">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Отправить заявку</h2>
+        <p class="modal__text">Хотите узнать, сколько будет стоить монтаж на вашем участке? Оставте заявку, наш специалист сам позвонит Вам и ответит на все вопросы.</p>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name" class="modal__input" required>
+            <label for="name" class="modal__label">Как к Вам обращаться?</label>
+          </div>
+          <div class="modal__field">
+            <input type="tel" name="phone" id="phone" class="modal__input modal__input--phone" required>
+            <label for="phone" class="modal__label">На какой номер звонить?</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email" class="modal__input">
+            <label for="email" class="modal__label">Ваша почта, чтобы мы могли Вам написать</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Login window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-login">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Вход</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name" class="modal__input" required>
+            <label for="name" class="modal__label">Ваш логин</label>
+          </div>
+          <div class="modal__field">
+            <input type="password" name="password" id="pass-login" class="modal__input" required>
+            <label for="pass-login" class="modal__label">Ваш пароль</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email" class="modal__input" required>
+            <label for="email" class="modal__label">Ваша почта</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Войти</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Registration window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-reg">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Регистрация</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name" class="modal__input" required>
+            <label for="name" class="modal__label">Как к Вам обращаться?</label>
+          </div>
+          <div class="modal__field">
+            <input type="password" name="password" id="pass-reg" class="modal__input" required>
+            <label for="pass-reg" class="modal__label">Ваш пароль</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email" class="modal__input" required>
+            <label for="email" class="modal__label">Ваша почта</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
   <script src="js/script.js"></script>
   
 <!-- Slider -->
@@ -381,6 +458,46 @@
       nextButton: ".swiper-button-next",
       prevButton: ".swiper-button-prev",
     });
+  </script>
+  
+<!-- Modal windows -->
+  <script>
+    $(".call__btn").click(function(){
+      $(function(){
+        $("#modal").arcticmodal();
+      });
+    });
+    $(".user__link--login").click(function(){
+      $(function(){
+        $("#modal-login").arcticmodal();
+      });
+    });
+    $(".user__link--reg").click(function(){
+      $(function(){
+        $("#modal-reg").arcticmodal();
+      });
+    });
+  </script>
+  
+<!-- Map -->
+  <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
+  <script>
+    var myMap;
+    ymaps.ready(init); // API loading
+    function init () {
+      myMap = new ymaps.Map("map", {
+        center: [59.923929, 30.443736], // map center
+        zoom: 14 // Zoom
+      });
+      //custom marker
+      var myPlacemark = new ymaps.Placemark([59.923929, 30.443736] , {},
+        { iconLayout: "default#image",
+          iconImageHref: "img/pin.png",
+          iconImageSize: [186, 65],
+          iconImageOffset: [-20, -47] });     
+
+      myMap.geoObjects.add(myPlacemark);
+    }
   </script>
 </body>
 </html>

@@ -2,58 +2,87 @@
   <defs>
     <style>
       .cls-1 {
-        mask: url(#mask);
-      }
-
-      .cls-2, .cls-3 {
-        fill: #37c3ff;
+        fill: none;
       }
 
       .cls-2 {
-        fill-rule: evenodd;
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
       }
 
       .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-6, .cls-7 {
+        fill: #37c3ff;
+      }
+
+      .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-8 {
         font-size: 15.35px;
         fill: #1d1d1b;
         font-family: PT Astra Sans;
         font-weight: 700;
       }
 
-      .cls-5 {
+      .cls-9 {
         letter-spacing: 2px;
       }
 
-      .cls-6 {
+      .cls-10 {
         fill: #009fe3;
       }
     </style>
     <mask id="mask" x="-810.74" y="-4054.27" width="1856.9" height="4531.29" maskUnits="userSpaceOnUse"/>
+    <clipPath id="clip-path" transform="translate(-827.29 -4018.12)">
+      <rect class="cls-1" x="819.14" y="3984.95" width="193.1" height="140.81"/>
+    </clipPath>
+    <clipPath id="clip-path-2" transform="translate(-827.29 -4018.12)">
+      <rect class="cls-1" x="869.5" y="4017.5" width="143" height="50"/>
+    </clipPath>
   </defs>
   <title>pin</title>
   <g>
-    <g class="cls-1">
-      <polygon points="176.79 48.97 146.15 16.79 0 25.48 30.64 57.66 88.95 54.2 113.92 64.03 118.49 52.44 176.79 48.97"/>
+    <g class="cls-2">
+      <g class="cls-3">
+        <polygon points="176.79 48.97 146.15 16.79 0 25.48 30.64 57.66 88.95 54.2 113.92 64.03 118.49 52.44 176.79 48.97"/>
+      </g>
     </g>
-    <g>
-      <path class="cls-2" d="M586.79,3991.2h0a4,4,0,0,1,5.68,0h0a4,4,0,0,1,0,5.68h0a4,4,0,0,1-5.68,0h0a4,4,0,0,1,0-5.68m4.33-7.78h-3l0,0h0l-0.69,2.39-0.05.18-0.18.06c-0.25.08-.5,0.17-0.74,0.27h0a7.75,7.75,0,0,0-.71.33l-0.17.09-0.17-.09-2.16-1.2h-0.07l-2.08,2.08h0v0a0.05,0.05,0,0,0,0,0h0l1.2,2.16,0.09,0.17-0.09.17c-0.12.23-.24,0.47-0.34,0.72s-0.19.49-.27,0.74l-0.06.18-0.18.05-2.38.67,0,0a0.06,0.06,0,0,0,0,0h0v3h0v0l0,0,2.37,0.67,0.18,0.05,0.06,0.18a7.71,7.71,0,0,0,.28.75c0.11,0.25.22,0.49,0.35,0.72l0.09,0.17-0.09.17-1.21,2.16h0a0.05,0.05,0,0,0,0,0,0,0,0,0,0,0,0h0l2.08,2.08h0.06l2.17-1.21,0.17-.09,0.17,0.09c0.24,0.13.48,0.24,0.72,0.34h0c0.24,0.1.49,0.19,0.73,0.27l0.18,0.06,0.05,0.18,0.69,2.38h0l0,0h3l0,0h0l0.69-2.37,0.05-.18,0.18-.06q0.38-.12.73-0.27c0.24-.1.48-0.22,0.72-0.34l0.17-.09,0.17,0.09,2.17,1.21h0.06l2.08-2.08h0a0,0,0,0,0,0,0,0.06,0.06,0,0,0,0,0h0l-1.21-2.16-0.09-.17,0.09-.17c0.12-.23.24-0.47,0.35-0.72a7.38,7.38,0,0,0,.28-0.75l0.06-.18,0.19-.05,2.38-.67,0,0h0v0h0v-3h0a0.06,0.06,0,0,0,0,0h0l0,0-2.37-.67-0.19-.05-0.06-.18c-0.08-.25-0.17-0.5-0.27-0.74s-0.22-.49-0.34-0.72l-0.09-.17,0.09-.17,1.19-2.16h0a0.07,0.07,0,0,0,0,0v0h0l-2.08-2.08H596l-2.17,1.2-0.17.09-0.17-.09a7.69,7.69,0,0,0-.71-0.33c-0.24-.1-0.49-0.19-0.74-0.27l-0.18-.06-0.05-.18-0.68-2.37a0.14,0.14,0,0,0,0-.05" transform="translate(-522.29 -3969.62)"/>
-      <rect class="cls-3" x="42.86" y="2.41" width="2.96" height="46.45"/>
-      <rect class="cls-3" x="88.91" y="2.41" width="2.96" height="46.45"/>
-      <rect class="cls-3" x="42.86" width="141.97" height="2.95"/>
-      <rect class="cls-3" x="42.86" y="45.9" width="141.97" height="2.95"/>
-      <rect class="cls-3" x="65.86" y="1.48" width="2.96" height="10.36"/>
-      <rect class="cls-3" x="65.86" y="37.08" width="2.96" height="10.02"/>
-      <rect class="cls-3" x="595.83" y="3977.09" width="18.64" height="2.95" transform="translate(-3158.3 -2376.45) rotate(-45)"/>
-      <rect class="cls-3" x="564.71" y="4008.16" width="18.75" height="2.95" transform="translate(-3189.37 -2389.31) rotate(-45)"/>
-      <rect class="cls-3" x="79.96" y="22.98" width="9.65" height="2.95"/>
-      <rect class="cls-3" x="44.69" y="22.98" width="10.03" height="2.95"/>
-      <rect class="cls-3" x="603.73" y="4000.25" width="2.95" height="18.8" transform="translate(-3180.27 -2367.3) rotate(-45)"/>
-      <rect class="cls-3" x="572.6" y="3969.16" width="2.95" height="18.75" transform="translate(-3167.38 -2398.42) rotate(-45)"/>
+    <rect class="cls-4" x="44.21" y="0.87" width="139" height="46"/>
+    <g class="cls-5">
+      <path class="cls-6" d="M891.79,4039.7h0a4,4,0,0,1,5.68,0h0a4,4,0,0,1,0,5.68h0a4,4,0,0,1-5.68,0h0a4,4,0,0,1,0-5.68m4.33-7.78h-3l0,0h0l-0.69,2.39-0.05.18-0.18.06c-0.25.08-.5,0.17-0.74,0.27h0a7.75,7.75,0,0,0-.71.33l-0.17.09-0.17-.09-2.16-1.2h-0.07l-2.08,2.08h0v0a0.05,0.05,0,0,0,0,0h0l1.2,2.16,0.09,0.17-0.09.17c-0.12.23-.24,0.47-0.34,0.72s-0.19.49-.27,0.74l-0.06.18-0.18.05L884,4041l0,0a0.06,0.06,0,0,0,0,0h0v3h0v0l0,0,2.37,0.67,0.18,0.05,0.06,0.18a7.71,7.71,0,0,0,.28.75c0.11,0.25.22,0.49,0.35,0.72l0.09,0.17-0.09.17-1.21,2.16h0a0.05,0.05,0,0,0,0,0,0,0,0,0,0,0,0h0l2.08,2.08h0.06l2.17-1.21,0.17-.09,0.17,0.09c0.24,0.13.48,0.24,0.72,0.34h0c0.24,0.1.49,0.19,0.73,0.27l0.18,0.06,0.05,0.18,0.69,2.38h0l0,0h3l0,0h0l0.69-2.37,0.05-.18,0.18-.06q0.38-.12.73-0.27c0.24-.1.48-0.22,0.72-0.34l0.17-.09,0.17,0.09,2.17,1.21h0.06l2.08-2.08h0a0,0,0,0,0,0,0,0.06,0.06,0,0,0,0,0h0l-1.21-2.16-0.09-.17,0.09-.17c0.12-.23.24-0.47,0.35-0.72a7.38,7.38,0,0,0,.28-0.75l0.06-.18,0.19-.05,2.38-.67,0,0h0v0h0v-3h0a0.06,0.06,0,0,0,0,0h0l0,0-2.37-.67-0.19-.05-0.06-.18c-0.08-.25-0.17-0.5-0.27-0.74s-0.22-.49-0.34-0.72l-0.09-.17,0.09-.17,1.19-2.16h0a0.07,0.07,0,0,0,0,0v0h0L901.1,4034H901l-2.17,1.2-0.17.09-0.17-.09a7.69,7.69,0,0,0-.71-0.33c-0.24-.1-0.49-0.19-0.74-0.27l-0.18-.06-0.05-.18-0.68-2.37a0.14,0.14,0,0,0,0-.05" transform="translate(-827.29 -4018.12)"/>
+      <rect class="cls-7" x="65.86" y="2.96" width="2.96" height="8.88"/>
+      <rect class="cls-7" x="42.86" y="2.41" width="2.96" height="46.45"/>
+      <rect class="cls-7" x="88.91" y="2.41" width="2.96" height="46.45"/>
+      <rect class="cls-7" x="42.86" width="141.97" height="2.95"/>
+      <rect class="cls-7" x="42.86" y="45.9" width="141.97" height="2.95"/>
+      <rect class="cls-7" x="65.86" y="37.08" width="2.96" height="8.88"/>
+      <rect class="cls-7" x="65.86" y="1.48" width="2.96" height="10.36"/>
+      <rect class="cls-7" x="65.86" y="37.08" width="2.96" height="10.02"/>
+      <rect class="cls-7" x="900.83" y="4025.59" width="18.64" height="2.95" transform="translate(-3408.27 -2195.08) rotate(-45)"/>
+      <rect class="cls-7" x="869.71" y="4056.66" width="18.75" height="2.95" transform="translate(-3439.33 -2207.94) rotate(-45)"/>
+      <rect class="cls-7" x="79.96" y="22.98" width="9.65" height="2.95"/>
+      <rect class="cls-7" x="44.69" y="22.98" width="10.03" height="2.95"/>
+      <rect class="cls-7" x="908.73" y="4048.75" width="2.95" height="18.8" transform="translate(-3430.23 -2185.93) rotate(-45)"/>
+      <rect class="cls-7" x="877.6" y="4017.66" width="2.95" height="18.75" transform="translate(-3417.34 -2217.05) rotate(-45)"/>
     </g>
-    <text class="cls-4" transform="translate(99.77 20.76)"><tspan class="cls-5">П</tspan><tspan x="14.28" y="0">О</tspan></text>
-    <text class="cls-4" transform="translate(127.66 20.76)"><tspan class="cls-5">ЛИ</tspan><tspan x="28.07" y="0">В</tspan></text>
-    <text class="cls-4" transform="translate(99.77 38.84)"><tspan class="cls-5">С</tspan><tspan class="cls-5" x="13.41" y="0">ЕРВИ</tspan><tspan x="64.59" y="0">С</tspan></text>
-    <rect class="cls-3" x="181.88" width="2.96" height="48.86"/>
-    <polyline class="cls-6" points="98.36 48.37 113.71 63.71 129.05 48.37"/>
+    <text class="cls-8" transform="translate(99.77 20.76)"><tspan class="cls-9">П</tspan><tspan x="14.28" y="0">О</tspan></text>
+    <text class="cls-8" transform="translate(127.66 20.76)"><tspan class="cls-9">ЛИ</tspan><tspan x="28.07" y="0">В</tspan></text>
+    <text class="cls-8" transform="translate(99.77 38.84)"><tspan class="cls-9">С</tspan><tspan class="cls-9" x="13.41" y="0">ЕРВИ</tspan><tspan x="64.59" y="0">С</tspan></text>
+    <g class="cls-5">
+      <rect class="cls-7" x="181.88" width="2.96" height="48.86"/>
+    </g>
+    <polyline class="cls-10" points="98.36 48.37 113.71 63.71 129.05 48.37"/>
   </g>
 </svg>
