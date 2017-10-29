@@ -188,17 +188,21 @@
       <h2 class="title-h2">Наши услуги</h2>
       <div class="service__list">
         <div class="service__wrap">
-          <a href="#" class="service__item service__item--sell">
+          <a href="#" class="service__item service__item--wide">
+            <img src="img/service-img-1.jpg" alt="Продажа" class="service__img service__img--wide" width="795">
             <h3 class="title-h3 service__title"><span>Продажа</span></h3>
           </a>
-          <a href="#" class="service__item service__item--project">
+          <a href="#" class="service__item service__item--bottom">
+            <img src="img/service-img-3.jpg" alt="Проектирование" class="service__img" width="390">
             <h3 class="title-h3 service__title"><span>Проектирование</span></h3>
           </a>
-          <a href="#" class="service__item service__item--montage">
+          <a href="#" class="service__item service__item--bottom">
+            <img src="img/service-img-4.jpg" alt="Монтаж" class="service__img" width="390">
             <h3 class="title-h3 service__title"><span>Монтаж</span></h3>
           </a>
         </div>
-        <a href="#" class="service__item service__item--right">
+        <a href="#" class="service__item service__item--tall">
+          <img src="img/service-img-2.jpg" alt="Обслуживание" class="service__img service__img--tall" width="390">
           <h3 class="title-h3 service__title"><span>Обслуживание</span></h3>
         </a>
       </div>
@@ -281,52 +285,62 @@
       </form>
     </section>
     
-    <section class="application wrapper">
+    <section class="service wrapper">
       <h2 class="title-h2">Сферы применения</h2>
-      <div class="application__list">
-        <a href="#" class="application__item">
-          <h3 class="title-h3">Спортивные объекты</h3>
+      <div class="service__list">
+        <a href="#" class="service__item service__item--tall">
+          <img src="img/application-img-1.jpg" alt="Обслуживание" class="service__img service__img--tall" width="390">
+          <h3 class="title-h3 service__title"><span>Спортивные объекты</span></h3>
         </a>
-        <a href="#" class="application__item">
-          <h3 class="title-h3">Общественные территории</h3>
-        </a>
-        <a href="#" class="application__item">
-          <h3 class="title-h3">Сельское хозяйство</h3>
-        </a>
-        <a href="#" class="application__item">
-          <h3 class="title-h3">Частные домовладения</h3>
-        </a>
+        <div class="service__wrap">
+          <a href="#" class="service__item service__item--application">
+            <img src="img/application-img-2.jpg" alt="Монтаж" class="service__img service__img--application" width="390">
+            <h3 class="title-h3 service__title"><span>Общественные территории</span></h3>
+          </a>
+          <a href="#" class="service__item service__item--application">
+            <img src="img/application-img-3.jpg" alt="Монтаж" class="service__img service__img--application" width="390">
+            <h3 class="title-h3 service__title"><span>Сельское хозяйство</span></h3>
+          </a>
+          <a href="#" class="service__item service__item--wide service__item--bottom-app">
+            <img src="img/application-img-4.jpg" alt="Продажа" class="service__img service__img--wide" width="795">
+            <h3 class="title-h3 service__title"><span>Частные домовладения</span></h3>
+          </a>
+        </div>
       </div>
     </section>
     
-    <section class="brand wrapper-slider">
-      <h2 class="title-h2">Используемые бренды</h2>
-      <ul class="brand__slider">
-        <li class="brand__slide">
-          <img src="img/logo-irritec.jpg" alt="" width="250" height="59">
-        </li>
-        <li class="brand__slide">
-          <img src="img/logo-anion.jpg" alt="" width="172" height="39">
-        </li>
-        <li class="brand__slide">
-          <img src="img/logo-espa.jpg" alt="" width="172" height="59">
-        </li>
-        <li class="brand__slide">
-          <img src="img/logo-hunter.jpg" alt="" width="217" height="49">
-        </li>
-        <li class="brand__slide">
-          <img src="img/logo-raindrip.jpg" alt="" width="237" height="58">
-        </li>
-      </ul>
+    <section class="brand">
+      <h2 class="title-h2 brand__title">Используемые бренды</h2>
+      <div class="swiper-container brand__slider">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide brand__slide">
+            <img src="img/logo-irritec.jpg" alt="irritec" width="158" height="37">
+          </li>
+          <li class="swiper-slide brand__slide">
+            <img src="img/logo-anion.jpg" alt="anion" width="172" height="39">
+          </li>
+          <li class="swiper-slide brand__slide">
+            <img src="img/logo-espa.jpg" alt="espa" width="129" height="44">
+          </li>
+          <li class="swiper-slide brand__slide">
+            <img src="img/logo-hunter.jpg" alt="hunter" width="164" height="37">
+          </li>
+          <li class="swiper-slide brand__slide">
+            <img src="img/logo-raindrip.jpg" alt="raindrip" width="182" height="44">
+          </li>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </section>
     
     <section class="contacts wrapper">
       <h2 class="title-h2">Контакты</h2>
       <div class="contacts__map"></div>
       <div class="contacts__wrap">
-        <address class="contacts__text">Санкт-Петербург, улица Ворошилова, д. 6А, офис 203</address>
-        <p class="contacts__text">Мы работаем ежедневно с 10:00 до 19:00</p>
-        <div class="call">
+        <address class="contacts__text">Санкт-Петербург,<br>улица Ворошилова, д. 6А, офис 203</address>
+        <p class="contacts__info">Мы работаем ежедневно с 10:00 до 19:00</p>
+        <div class="call contacts__info">
           <a href="Tel:+78002502932" class="call__phone">
             <p class="call__number">8 800 250-29-32</p>
             <span class="call__text">Бесплатный звонок</span>
@@ -339,12 +353,12 @@
   
   <footer class="footer wrapper">
     <div class="footer__wrap">
-      <p class="footer__copyright">© 2017 Hunter</p>
+      <span class="footer__copyright">© 2017 Hunter</span>
       <a href="#" class="footer__link">Политика конфиденциальности</a>
     </div>
     <div class="social">
       <a href="#" class="social__link">
-        <img src="img/icon-fb.svg" alt="Facebook" class="social__img" width="23" height="23">
+        <img src="img/icon-fb.svg" alt="Facebook" class="social__img" width="35" height="35">
       </a>
       <a href="#" class="social__link">
         <img src="img/icon-tw.svg" alt="Twitter" class="social__img" width="23" height="23">
@@ -355,6 +369,18 @@
     </div>
   </footer>
   
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
+  
+<!-- Slider -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: "auto",
+      loop: true,
+      nextButton: ".swiper-button-next",
+      prevButton: ".swiper-button-prev",
+    });
+  </script>
 </body>
 </html>
