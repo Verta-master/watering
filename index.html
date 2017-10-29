@@ -54,8 +54,8 @@
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Услуги</a>
-          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
-          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <input type="checkbox" name="menu" id="drop-3" class="menu__drop">
+          <label for="drop-3" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
           <div class="menu__sublist-wrap">
             <ul class="menu__sublist">
               <li class="menu__subitem">
@@ -75,8 +75,8 @@
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Покупателю</a>
-          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
-          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <input type="checkbox" name="menu" id="drop-4" class="menu__drop">
+          <label for="drop-4" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
           <div class="menu__sublist-wrap">
             <ul class="menu__sublist">
               <li class="menu__subitem">
@@ -93,8 +93,8 @@
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Для бизнеса</a>
-          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
-          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <input type="checkbox" name="menu" id="drop-5" class="menu__drop">
+          <label for="drop-5" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
           <div class="menu__sublist-wrap">
             <ul class="menu__sublist">
               <li class="menu__subitem">
@@ -208,58 +208,69 @@
       <h2 class="title-h2">Заполните бриф на проект</h2>
       <form action="#" method="post" class="brief__form">
         <div class="brief__wrap">
-          <div class="brief__field">
-            <label for="name" class="brief__label">Ваше имя:</label>
-            <input type="text" name="name" id="name" class="brief__input">
-          </div>
-          <div class="brief__field">
-            <label for="phone" class="brief__label">Номер телефона:</label>
-            <input type="tel" name="phone" id="phone" class="brief__input">
-          </div>
-          <div class="brief__field">
-            <label for="height" class="brief__label">Перепад высоты:</label>
-            <input type="text" name="height" id="height" class="brief__input">
-            <span class="brief__comment">Укажите, имеется ли перепад высот и его размер</span>
-          </div>
-          <div class="brief__field">
-            <label for="source" class="brief__label">Источник воды на участке:</label>
-            <select name="source" id="source" class="brief__select">
-              <option value="0">Выбрать</option>
-              <option value="1">Источник 1</option>
-              <option value="2">Источник 2</option>
-            </select>
-          </div>
-          <div class="brief__field">
-            <label for="file" class="brief__label">Источник воды на участке:</label>
-            <input type="file" name="file" id="file" class="brief__input" placeholder="Загрузить файл">
-            <span class="brief__comment">Ваша конфиденциальность очень важна для нас. Мы хотим, чтобы Ваша работа в Интернете, по возможности, была максимально приятной и полезной.</span>
-          </div>
-        </div>
-        <div class="brief__wrap">
-          <div class="brief__field">
-            <label for="email" class="brief__label">Ваш Email:</label>
-            <input type="email" name="email" id="email" class="brief__input">
-          </div>
-          <div class="brief__field">
-            <label for="object" class="brief__label">Название объекта:</label>
-            <input type="text" name="object" id="object" class="brief__input">
-            <span class="brief__comment">Название поселка, дачного кооператива или улицы</span>
-          </div>
-          <div class="brief__field">
-            <label for="distance" class="brief__label">Удаленность участка от СПб:</label>
-            <input type="text" name="distance" id="distance" class="brief__input">
-          </div>
-          <div class="brief__field">
-            <span class="brief__label">Полив дорожек:</span>
+          <div>
             <div class="brief__wrap">
-              <input type="radio" name="water" id="water-yes" class="brief__radio" checked>
-              <label for="water-yes" class="brief__label">Да</label>
-              <input type="radio" name="water" id="water-no" class="brief__radio">
-              <label for="water-no" class="brief__label">Нет</label>
+              <div class="brief__field">
+                <label for="name" class="brief__label">Ваше имя:</label>
+                <input type="text" name="name" id="name" class="brief__input">
+              </div>
+              <div class="brief__field">
+                <label for="phone" class="brief__label">Номер телефона:</label>
+                <input type="tel" name="phone" id="phone" class="brief__input">
+              </div>
+              <div class="brief__field">
+                <label for="height" class="brief__label">Перепад высоты:</label>
+                <input type="text" name="height" id="height" class="brief__input">
+                <span class="brief__comment brief__comment--margin">Укажите, имеется ли перепад высот и его размер</span>
+              </div>
             </div>
-            <span class="brief__comment">Отказ от полива дорожек может привести к увеличению стоимости на 30-50%</span>
+            <div class="brief__wrap">
+              <div class="brief__field">
+                <label for="email" class="brief__label">Ваш Email:</label>
+                <input type="email" name="email" id="email" class="brief__input">
+              </div>
+              <div class="brief__field">
+                <label for="object" class="brief__label">Название объекта:</label>
+                <input type="text" name="object" id="object" class="brief__input">
+                <span class="brief__comment brief__comment--margin">Название поселка, дачного кооператива или улицы</span>
+              </div>
+              <div class="brief__field">
+                <label for="distance" class="brief__label">Удаленность участка от СПб:</label>
+                <input type="text" name="distance" id="distance" class="brief__input">
+              </div>
+            </div>
+          </div>
+          
+          <div class="brief__content">
+            <div class="brief__field">
+              <span class="brief__label">Источник воды на участке:</span>
+              <input type="checkbox" name="drop" id="drop" class="brief__drop">
+              <label for="drop" class="brief__select">Выбрать</label>
+              <div class="brief__source">
+                <span class="brief__label brief__label--source">Источник 1</span>
+                <span class="brief__label brief__label--source">Источник 2</span>
+                <span class="brief__label brief__label--source">Источник 3</span>
+              </div>
+            </div>
+            <div class="brief__field">
+              <label for="file" class="brief__label">Источник воды на участке:</label>
+              <input type="file" name="file" id="file" class="brief__file">
+              <label for="file" class="brief__upload">Загрузить файл</label>
+              <span class="brief__comment">Ваша конфиденциальность очень важна для нас. Мы хотим, чтобы Ваша работа в Интернете, по возможности, была максимально приятной и полезной.</span>
+            </div>
+            <div class="brief__field brief__field--wide">
+              <span class="brief__label">Полив дорожек:</span>
+              <div class="brief__wrap">
+                <input type="radio" name="water" id="water-yes" class="brief__radio" checked>
+                <label for="water-yes" class="brief__label brief__label--radio"><span>Да</span></label>
+                <input type="radio" name="water" id="water-no" class="brief__radio">
+                <label for="water-no" class="brief__label brief__label--radio"><span>Нет</span></label>
+              </div>
+              <span class="brief__comment">Отказ от полива дорожек мо-<br>жет привести к увеличению стоимости на 30-50%</span>
+            </div>
           </div>
         </div>
+        
         <div class="brief__wrap">
           <div class="brief__field">
             <label for="comment" class="brief__label">Ваш комментарий:</label>

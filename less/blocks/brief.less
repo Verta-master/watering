@@ -1,0 +1,171 @@
+.brief {
+  margin-bottom: 85px;
+}
+
+.brief__form {
+  padding: 50px 45px;
+  border: 6px solid @blue;
+}
+
+.brief__wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.brief__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.brief__label {
+  display: block;
+  padding-bottom: 5px;
+  
+  &--radio {
+    cursor: pointer;
+    position: relative;
+    margin-right: 25px;
+    padding-left: 30px;
+    
+    span {
+      border-bottom: 1px dotted @blue;
+    }
+    
+    &:hover span,
+    &:active span {
+      border-bottom: 1px solid @blue;
+    }
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 26px;
+      border: 1px solid @blue;
+    }
+    
+    &::after {
+      display: none;
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      width: 12px;
+      height: 12px;
+      background-color: @green;
+    }
+  }
+  
+  &--source {
+    cursor: pointer;
+    
+    &:hover,
+    &:active {
+      color: @green;
+    }
+  }
+}
+
+.brief__input {
+  width: 189px;
+  height: 26px;
+  border: 1px solid @blue;
+  margin-right: 37px;
+  padding: 0 10px;
+}
+
+.brief__comment {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #bbbdc0;
+  padding-top: 12px;
+  max-width: 155px;
+  
+  &--margin {
+    margin-bottom: 45px;
+  }
+}
+
+.brief__area {
+  display: block;
+  border: 1px solid @blue;
+  padding: 10px;
+  width: 641px;
+  height: 104px;
+  margin-right: 38px;
+}
+
+.brief__btn {
+  font-size: 22px;
+  line-height: 27px;
+  width: 255px;
+  min-height: 51px;
+  margin-top: auto;
+}
+
+.brief__field {
+  position: relative;
+  
+  &--wide {
+    margin-top: -40px;
+  }
+}
+
+.brief__file,
+.brief__drop,
+.brief__radio {
+  display: none;
+}
+
+.brief__radio:checked + .brief__label--radio::after {
+  display: block;
+}
+
+.brief__select {
+  display: block;
+  color: #bbbdc0;
+  width: 188px;
+  height: 26px;
+  padding-left: 10px;
+  margin-right: 38px;
+  border: 1px solid @blue;
+  background-image: url(../img/icon-select.svg);
+  background-repeat: no-repeat;
+  background-size: 8px 5px;
+  background-position: 96% center;
+  cursor: pointer;
+}
+
+.brief__source {
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 188px;
+  padding: 0 10px;
+  background-color: #fff;
+  border: 1px solid @blue;
+  border-top: none;
+  z-index: 5;
+}
+
+.brief__drop:checked ~ .brief__source {
+  display: block;
+}
+
+.brief__upload {
+  display: block;
+  width: 188px;
+  height: 25px;
+  background-color: rgb(241, 242, 242);
+  padding-left: 10px;
+  background-image: url(../img/icon-plus.svg);
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-position: 96% center;
+  cursor: pointer;
+}
