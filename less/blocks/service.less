@@ -4,31 +4,32 @@
 
 .service__item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
   width: 390px;
   height: 290px;
-  padding-left: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   
-  &--sell {
-    background-image: url(../img/service-img-1.jpg);
+  &--wide {
     width: 795px;
   }
   
-  &--right {
-    background-image: url(../img/service-img-2.jpg);
+  &--tall {
     height: 595px;
   }
   
-  &--project {
-    background-image: url(../img/service-img-3.jpg);
+  &--bottom {
     margin-top: auto;
   }
   
-  &--montage {
-    background-image: url(../img/service-img-4.jpg);
+  &--bottom-app {
+    height: 216px;
     margin-top: auto;
+  }
+  
+  &--application {
+    height: 368px;
   }
   
   &:hover,
@@ -54,5 +55,29 @@
 }
 
 .service__title {
-  margin-top: auto;
+  max-width: 270px;
+  margin: 0;
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+}
+
+.service__img {
+  display: block;
+  max-width: none;
+  
+  &--wide {
+    width: 795px;
+    height: auto;
+  }
+  
+  &--tall {
+    height: 595px;
+    width: auto;
+  }
+  
+  &--application {
+    height: 368px;
+    width: auto;
+  }
 }
