@@ -696,7 +696,7 @@ button {
 }
 .promo__text {
   position: relative;
-  max-width: 450px;
+  max-width: 455px;
 }
 .promo__link {
   position: absolute;
@@ -1545,6 +1545,8 @@ button.swiper-pagination-bullet {
   min-height: 67px;
   padding-left: 25px;
   padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .footer__link {
   color: #fff;
@@ -1578,6 +1580,10 @@ button.swiper-pagination-bullet {
 .social__link:hover img,
 .social__link:active img {
   transform: scale(1.1);
+}
+.social__link:first-child .social__img {
+  width: 35px;
+  height: 35px;
 }
 .social__img {
   max-width: none;
@@ -1624,7 +1630,7 @@ button.swiper-pagination-bullet {
   background: #000 url(loading.gif) no-repeat 50% 50%;
 }
 .modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   display: -ms-flexbox;
@@ -1634,7 +1640,7 @@ button.swiper-pagination-bullet {
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #00adef;
   border: 35px solid #fff;
   color: #fff;
@@ -1740,8 +1746,12 @@ button.swiper-pagination-bullet {
     padding: 20px;
   }
   .brief__wrap {
+    -ms-flex-pack: center;
+        justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
   }
   .brief__select,
   .brief__input {
@@ -1749,6 +1759,10 @@ button.swiper-pagination-bullet {
   }
   .brief__field {
     margin-right: 20px;
+  }
+  .brief__field-area {
+    margin-left: auto;
+    margin-right: auto;
   }
   .brief__btn {
     margin: auto;
@@ -1905,9 +1919,18 @@ button.swiper-pagination-bullet {
   .brief__wrap {
     -ms-flex-pack: center;
         justify-content: center;
+    width: 420px;
   }
   .brief__content {
     margin-top: 10px;
+  }
+  .brief__field--wide {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .service__item {
     height: 200px;
@@ -1988,8 +2011,15 @@ button.swiper-pagination-bullet {
   .catalog__list {
     max-width: 100%;
   }
+  .brief__content,
+  .brief__wrap {
+    width: 240px;
+    -ms-flex-align: center;
+        align-items: center;
+  }
   .brief__field-area {
     margin-right: 0;
+    width: 240px;
   }
   .menu__link {
     font-size: 14px;
@@ -2016,8 +2046,6 @@ button.swiper-pagination-bullet {
   .modal {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: none;
-    border-bottom: none;
   }
   .modal__form {
     margin-top: 0;
