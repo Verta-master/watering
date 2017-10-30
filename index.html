@@ -14,7 +14,57 @@
         <p class="logo__text">Профессиональные системы полива из США и Европы</p>
       </div>
       <div class="user">
-        <a href="#" class="user__link user__link--cart"><span>Товаров в корзине: <b>12</b></span></a>
+        <div class="user__cart-wrap">
+          <input type="checkbox" name="open" id="open" class="user__open">
+          <label for="open" class="user__link user__link--cart"><span>Товаров в корзине: <b>12</b></span></label>
+          <div class="user__cart">
+            <form method="post" class="user__list">
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Роторный дождеватель</span>
+                  <span class="user__model">PGJ-00</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="7">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">35 600 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Клапан</span>
+                  <span class="user__model">PGV</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="2">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">16 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Датчик</span>
+                  <span class="user__model">Mini-click</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="3">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">24 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <span class="user__total">75 600 &#8381;</span>
+                <a href="#" class="btn user__buy">Оформить покупку</a>
+              </div>
+            </form>
+          </div>
+        </div>
         <div class="user__login">
           <a href="#" class="user__link user__link--login"><span>Вход для юр. лиц</span></a>
           <a href="#" class="user__link user__link--reg"><span>Регистрация</span></a>
@@ -32,67 +82,82 @@
       <button class="menu__btn"><span class="visually-hidden">Закрыть/Открыть меню</span></button>
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="#" class="menu__link">Компания</a>
+          <a href="company.html" class="menu__link">Компания</a>
           <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
           <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
           <div class="menu__sublist-wrap">
             <ul class="menu__sublist">
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Пункт 1</a>
+                <a href="company.html#about" class="menu__sublink">О нас</a>
               </li>
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Пункт 2</a>
+                <a href="company.html#history" class="menu__sublink">История</a>
               </li>
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Пункт 3</a>
+                <a href="company.html#projects" class="menu__sublink">Реализованные проекты</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#facilities" class="menu__sublink">Оборудование</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#contacts" class="menu__sublink">Контакты</a>
               </li>
             </ul>
           </div>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link menu__link--active">Каталог</a>
+          <a href="catalog.html" class="menu__link">Каталог</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Услуги</a>
+          <a href="service.html" class="menu__link">Услуги</a>
           <input type="checkbox" name="menu" id="drop-3" class="menu__drop">
           <label for="drop-3" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
           <div class="menu__sublist-wrap">
             <ul class="menu__sublist">
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Продажа</a>
+                <a href="sell.html" class="menu__sublink">Продажа</a>
               </li>
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Проектирование</a>
+                <a href="project.html" class="menu__sublink">Проектирование</a>
               </li>
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Монтаж</a>
+                <a href="montage.html" class="menu__sublink">Монтаж</a>
               </li>
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Обслуживание</a>
+                <a href="support.html" class="menu__sublink">Обслуживание</a>
               </li>
             </ul>
           </div>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Покупателю</a>
+          <a href="customer.html" class="menu__link">Покупателю</a>
           <input type="checkbox" name="menu" id="drop-4" class="menu__drop">
           <label for="drop-4" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
           <div class="menu__sublist-wrap">
             <ul class="menu__sublist">
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Пункт 1</a>
+                <a href="customer.html#order" class="menu__sublink">Как заказать</a>
               </li>
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Пункт 2</a>
+                <a href="customer.html#delivery" class="menu__sublink">Оплата и доставка</a>
               </li>
               <li class="menu__subitem">
-                <a href="#" class="menu__sublink">Пункт 3</a>
+                <a href="customer.html#warranty" class="menu__sublink">Гарантии</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#watering" class="menu__sublink">О поливе</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#rational" class="menu__sublink">Рациональный полив</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#contacts" class="menu__sublink">Контакты</a>
               </li>
             </ul>
           </div>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Для бизнеса</a>
+          <a href="business.html" class="menu__link">Для бизнеса</a>
           <input type="checkbox" name="menu" id="drop-5" class="menu__drop">
           <label for="drop-5" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
           <div class="menu__sublist-wrap">

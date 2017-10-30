@@ -77,6 +77,18 @@
   .contacts__block {
     padding-right: 0;
   }
+  
+  .user__cart {
+    transform: translateX(-40%);
+  }
+  
+  .user__cart-wrap:hover .user__cart {
+    display: none;
+  }
+  
+  .user__open:checked ~ .user__cart {
+    display: block;
+  }
 }
 
 //----------------------------------
@@ -449,6 +461,32 @@
   }
   
   .contacts__block {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .user__list {
+    min-width: 280px;
+    width: 280px;
+  }
+  
+  .user__cart {
+    left: 0;
+    transform: translateX(0);
+  }
+  
+  .user__item {
+    flex-wrap: wrap;
+  }
+  
+  .user__wrap {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .user__total {
+    display: block;
+    margin-bottom: 20px;
     width: 100%;
     text-align: center;
   }

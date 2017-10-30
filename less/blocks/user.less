@@ -7,6 +7,7 @@
 
 .user__link {
   display: block;
+  cursor: pointer;
   color: #000;
   font-size: 13px;
   padding-left: 35px;
@@ -44,4 +45,139 @@
   &--login::before {
     background-image: url(../img/icon-padlock.png);
   }
+}
+
+.user__cart {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 20;
+  padding-top: 30px;
+  transform: translateX(-34%);
+}
+
+.user__cart-wrap {
+  position: relative;
+}
+
+.user__cart-wrap:hover .user__cart {
+  display: block;
+}
+
+.user__list {
+  background-color: #fff;
+  border: 1px solid @grey;
+  min-width: 515px;
+  padding: 10px 20px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid @grey;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg) translateX(-50%);
+  }
+}
+
+.user__field,
+.user__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user__field {
+  margin: 0;
+}
+
+.user__item {
+  padding: 10px 0;
+  border-bottom: 1px dotted rgba(230,231,232,0.5);
+  
+  &:last-child {
+    border-bottom: none;
+    padding-top: 15px;
+  }
+}
+
+.user__name,
+.user__model {
+  font-size: 14px;
+}
+
+.user__wrap {
+  flex-grow: 1;
+  display: flex;
+}
+
+.user__name {
+  flex-grow: 1;
+  max-width: 155px;
+}
+
+.user__model {
+  width: 90px;
+}
+
+.user__btn {
+  width: 25px;
+  height: 25px;
+  background-color: @blue;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+}
+
+.user__input {
+  width: 50px;
+  height: 25px;
+  border: none;
+  background-color: @blue;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  outline: none;
+}
+
+.user__price {
+  font-size: 14px;
+  font-weight: 700;
+  width: 96px;
+  text-align: center;
+}
+
+.user__total {
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.user__buy {
+  width: 222px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user__close {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-image: url(../img/icon-cross-red.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+  outline: none;
+}
+
+.user__open {
+  display: none;
 }

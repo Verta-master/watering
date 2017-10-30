@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.04 9.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #bc1818;
+      }
+    </style>
+  </defs>
+  <title>icon-cross-red</title>
+  <g>
+    <line class="cls-1" x1="0.35" y1="0.35" x2="8.68" y2="8.68"/>
+    <line class="cls-1" x1="0.35" y1="8.68" x2="8.68" y2="0.35"/>
+  </g>
+</svg>
