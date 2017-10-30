@@ -1,5 +1,5 @@
 .facilities {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .facilities__list {
@@ -7,23 +7,26 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
 .facilities__item {
   width: 33%;
+  min-height: 64px;
   margin-bottom: 45px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   &:nth-child(3) {
     padding-right: 30px;
   }
   
   &:nth-child(3n+1) {
-    text-align: left;
+    justify-content: flex-start;
   }
   
   &:nth-child(3n) {
-    text-align: right;
+    justify-content: flex-end;
   }
 }

@@ -48,6 +48,35 @@
   .brief__select {
     margin-bottom: 10px;
   }
+  
+  .main {
+    width: 740px;
+  }
+  
+  .about__text {
+    flex-wrap: wrap;
+  }
+  
+  .about__wrap,
+  .about__aside {
+    width: 100%;
+  }
+  
+  .history__block {
+    padding-left: 100px;
+    
+    &::after {
+      left: 45px;
+    }
+  }
+  
+  .projects__item {
+    height: 260px;
+  }
+  
+  .contacts__block {
+    padding-right: 0;
+  }
 }
 
 //----------------------------------
@@ -191,6 +220,25 @@
       display: block;
     }
   }
+  
+  .sidebar {
+    position: static;
+    width: 100%;
+  }
+  
+  .sidebar__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main {
+    width: 100%;
+  }
+  
+  .history__list .history__year,
+  .history__list span {
+    margin-right: 45px;
+  }
 }
 
 //-------------------------------------
@@ -251,6 +299,8 @@
     max-width: 50%;
   }
   
+  .projects,
+  .history,
   .brand,
   .brief,
   .service,
@@ -351,6 +401,57 @@
     font-size: 12px;
     line-height: 1.2;
   }
+  
+  .about__figure {
+    height: 235px;
+    margin-bottom: 20px;
+  }
+  
+  .projects__img,
+  .about__img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .title-h3-norm, h3 {
+    font-size: 24px;
+  }
+  
+  .history__block {
+    margin-top: 0;
+    padding-top: 50px;
+    
+    &::after {
+      top: 65px;
+      height: 800px;
+    }
+  }
+  
+  .history__list .history__year,
+  .history__list span {
+    font-size: 36px;
+    margin-bottom: 212px;
+  }
+  
+  .projects__text {
+    max-width: 100%;
+  }
+  
+  .facilities__item {
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    
+    &:nth-child(3n),
+    &:nth-child(3n+1) {
+      justify-content: center;
+    }
+  }
+  
+  .contacts__block {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 //-----------------------------------
@@ -411,6 +512,33 @@
   .menu__sublist-wrap {
     left: 185%;
   }
+  
+  .history__block {
+    padding: 30px 20px;
+    
+    &::after {
+      display: none;
+    }
+  }
+  
+  .history__list .history__item:last-child .history__year,
+  .history__list .history__item:last-child span,
+  .history__list .history__year,
+  .history__list span {
+    margin-bottom: 20px;
+  }
+  
+  .history__item {
+    flex-wrap: wrap;
+  }
+  
+  .about__figure {
+    height: 170px;
+  }
+  
+  .about__wrap {
+    text-align: left;
+  }
 }
 
 //-------------------------------------
@@ -418,13 +546,5 @@
   .modal {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-  
-  .modal__form {
-    margin-top: 0;
-  }
-  
-  .modal__title {
-    margin: 0;
   }
 }
