@@ -2012,3 +2012,17 @@ button.swiper-pagination-bullet {
     left: 185%;
   }
 }
+@media (orientation: landscape) {
+  .modal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: none;
+    border-bottom: none;
+  }
+  .modal__form {
+    margin-top: 0;
+  }
+  .modal__title {
+    margin: 0;
+  }
+}
