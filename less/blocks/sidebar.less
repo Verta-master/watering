@@ -1,0 +1,23 @@
+.sidebar {
+  width: 198px;
+  position: fixed;
+}
+
+.sidebar__link {
+  display: block;
+  line-height: 33px;
+  color: #000;
+  padding: 0 13px;
+  
+  span {
+    border-bottom: 1px dotted @blue;
+  }
+  
+  &--active {
+    background-color: rgb(230,231,232);
+    
+    span {
+      border-bottom: none;
+    }
+  }
+}

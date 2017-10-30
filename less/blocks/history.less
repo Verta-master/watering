@@ -1,0 +1,55 @@
+.history {
+  margin-bottom: 115px;
+}
+
+.history__block {
+  padding-top: 115px;
+  padding-left: 225px;
+  position: relative;
+  background-image: url(../img/company-history.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    width: 11px;
+    height: 898px;
+    background-image: url(../img/line.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.history__list {
+  color: #fff;
+  
+  span,
+  .history__year {
+    font-size: 72px;
+    line-height: 1;
+    font-weight: 700;
+    margin-right: 80px;
+    margin-bottom: 230px;
+  }
+  
+  p,
+  .history__text {
+    width: 377px;
+    margin-top: 0;
+  }
+  
+  .history__item:last-child span,
+  .history__item:last-child .history__year {
+    margin-bottom: 145px;
+  }
+}
+
+.history__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

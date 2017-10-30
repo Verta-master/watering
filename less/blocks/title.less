@@ -11,9 +11,36 @@ h2,
   font-size: 30px;
   line-height: 36px;
   color: #fff;
+  font-weight: 700;
   
   span {
     padding-bottom: 2px;
     border-bottom: 1px solid #fff;
+  }
+}
+
+h3,
+.title-h3-norm {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.title__sub {
+  max-width: 650px;
+  
+  &--wide {
+    max-width: none;
+  }
+  
+  a {
+    color: @blue;
+    border-bottom: 1px solid @blue;
+    margin-left: 15px;
+    
+    &:hover,
+    &:active {
+      border-bottom: 1px dotted @blue;
+    }
   }
 }

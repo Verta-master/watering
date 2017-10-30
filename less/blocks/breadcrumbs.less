@@ -1,0 +1,25 @@
+.breadcrumbs {
+  padding-top: 15px;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs__link {
+  color: #000;
+  padding-bottom: 2px;
+  margin-right: 20px;
+  border-bottom: 1px solid @blue;
+  
+  &:hover,
+  &:active {
+    border-bottom: 1px dotted @blue;
+  }
+  
+  &--active {
+    border-bottom: none;
+    
+    &:hover,
+    &:active {
+      border-bottom: none;
+    }
+  }
+}

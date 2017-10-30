@@ -1,0 +1,29 @@
+.facilities {
+  margin-bottom: 60px;
+}
+
+.facilities__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.facilities__item {
+  width: 33%;
+  margin-bottom: 45px;
+  text-align: center;
+  
+  &:nth-child(3) {
+    padding-right: 30px;
+  }
+  
+  &:nth-child(3n+1) {
+    text-align: left;
+  }
+  
+  &:nth-child(3n) {
+    text-align: right;
+  }
+}
