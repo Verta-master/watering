@@ -14,7 +14,57 @@
         <p class="logo__text">Профессиональные системы полива из США и Европы</p>
       </a>
       <div class="user">
-        <a href="#" class="user__link user__link--cart"><span>Товаров в корзине: <b>12</b></span></a>
+        <div class="user__cart-wrap">
+          <input type="checkbox" name="open" id="open" class="user__open">
+          <label for="open" class="user__link user__link--cart"><span>Товаров в корзине: <b>12</b></span></label>
+          <div class="user__cart">
+            <form method="post" class="user__list">
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Роторный дождеватель</span>
+                  <span class="user__model">PGJ-00</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="7">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">35 600 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Клапан</span>
+                  <span class="user__model">PGV</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="2">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">16 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Датчик</span>
+                  <span class="user__model">Mini-click</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="3">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">24 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <span class="user__total">75 600 &#8381;</span>
+                <a href="#" class="btn user__buy">Оформить покупку</a>
+              </div>
+            </form>
+          </div>
+        </div>
         <div class="user__login">
           <a href="#" class="user__link user__link--login"><span>Вход для юр. лиц</span></a>
           <a href="#" class="user__link user__link--reg"><span>Регистрация</span></a>
