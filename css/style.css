@@ -772,14 +772,16 @@ h3,
 }
 .title__sub {
   max-width: 650px;
+  margin-top: 30px;
 }
 .title__sub--wide {
   max-width: none;
+  margin: 0;
 }
 .title__sub a {
   color: #00adef;
   border-bottom: 1px solid #00adef;
-  margin-left: 15px;
+  margin-left: 12px;
 }
 .title__sub a:hover,
 .title__sub a:active {
@@ -1528,6 +1530,9 @@ button.swiper-pagination-bullet {
 .contacts {
   margin-bottom: 28px;
 }
+.contacts--company {
+  margin-bottom: 45px;
+}
 .contacts__map {
   width: 100%;
   height: 266px;
@@ -1536,6 +1541,9 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.contacts__map--company {
+  height: 341px;
 }
 .contacts__wrap {
   display: -ms-flexbox;
@@ -1548,7 +1556,7 @@ button.swiper-pagination-bullet {
 }
 .contacts__wrap--left {
   padding-left: 0;
-  padding-top: 45px;
+  padding-top: 50px;
 }
 .contacts__text {
   font-style: normal;
@@ -1746,8 +1754,8 @@ button.swiper-pagination-bullet {
   transition: ease-out 0.2s;
 }
 .breadcrumbs {
-  padding-top: 15px;
-  margin-bottom: 40px;
+  padding-top: 12px;
+  margin-bottom: 30px;
 }
 .breadcrumbs__link {
   color: #000;
@@ -1768,6 +1776,7 @@ button.swiper-pagination-bullet {
 }
 .sidebar {
   width: 198px;
+  padding-top: 15px;
   position: fixed;
 }
 .sidebar__link {
@@ -1779,18 +1788,25 @@ button.swiper-pagination-bullet {
 .sidebar__link span {
   border-bottom: 1px dotted #00adef;
 }
+.sidebar__link:hover,
+.sidebar__link:active,
 .sidebar__link--active {
   background-color: #e6e7e8;
 }
+.sidebar__link:hover span,
+.sidebar__link:active span,
 .sidebar__link--active span {
   border-bottom: none;
+}
+.sidebar__item {
+  margin-bottom: 13px;
 }
 .main {
   width: 982px;
   margin-left: auto;
 }
 .about {
-  margin-bottom: 100px;
+  margin-bottom: 55px;
 }
 .about__figure {
   margin: 0;
@@ -1804,7 +1820,10 @@ button.swiper-pagination-bullet {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 65px;
+  margin-bottom: 55px;
+}
+.about__img {
+  max-width: none;
 }
 .about__text {
   display: -ms-flexbox;
@@ -1827,10 +1846,11 @@ button.swiper-pagination-bullet {
   padding-right: 30px;
 }
 .history {
-  margin-bottom: 115px;
+  margin-bottom: 105px;
 }
 .history__block {
-  padding-top: 115px;
+  margin-top: 50px;
+  padding-top: 105px;
   padding-left: 225px;
   position: relative;
   background-image: url(../img/company-history.jpg);
@@ -1857,17 +1877,17 @@ button.swiper-pagination-bullet {
   font-size: 72px;
   line-height: 1;
   font-weight: 700;
-  margin-right: 80px;
-  margin-bottom: 230px;
+  margin-right: 85px;
+  margin-bottom: 207px;
 }
 .history__list p,
 .history__list .history__text {
   width: 377px;
-  margin-top: 0;
+  margin-top: 5px;
 }
 .history__list .history__item:last-child span,
 .history__list .history__item:last-child .history__year {
-  margin-bottom: 145px;
+  margin-bottom: 135px;
 }
 .history__item {
   display: -ms-flexbox;
@@ -1878,10 +1898,10 @@ button.swiper-pagination-bullet {
       align-items: flex-start;
 }
 .projects {
-  margin-bottom: 100px;
+  margin-bottom: 85px;
 }
 .projects__list {
-  margin-top: 50px;
+  margin-top: 55px;
 }
 .projects__item {
   position: relative;
@@ -1898,7 +1918,7 @@ button.swiper-pagination-bullet {
 }
 .projects__text {
   position: absolute;
-  bottom: 25px;
+  bottom: 22px;
   left: 30px;
   max-width: 340px;
 }
@@ -1910,8 +1930,11 @@ button.swiper-pagination-bullet {
 .projects__place {
   color: #fff;
 }
+.projects__img {
+  max-width: none;
+}
 .facilities {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .facilities__list {
   display: -ms-flexbox;
@@ -1922,21 +1945,29 @@ button.swiper-pagination-bullet {
       justify-content: center;
   -ms-flex-align: start;
       align-items: flex-start;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 .facilities__item {
   width: 33%;
+  min-height: 64px;
   margin-bottom: 45px;
-  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .facilities__item:nth-child(3) {
   padding-right: 30px;
 }
 .facilities__item:nth-child(3n+1) {
-  text-align: left;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 .facilities__item:nth-child(3n) {
-  text-align: right;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 @media (max-width: 1200px) {
   .wrapper {
@@ -1974,6 +2005,29 @@ button.swiper-pagination-bullet {
   }
   .brief__select {
     margin-bottom: 10px;
+  }
+  .main {
+    width: 740px;
+  }
+  .about__text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__wrap,
+  .about__aside {
+    width: 100%;
+  }
+  .history__block {
+    padding-left: 100px;
+  }
+  .history__block::after {
+    left: 45px;
+  }
+  .projects__item {
+    height: 260px;
+  }
+  .contacts__block {
+    padding-right: 0;
   }
 }
 @media (max-width: 1000px) {
@@ -2090,6 +2144,23 @@ button.swiper-pagination-bullet {
   .menu--opened .menu__drop:checked ~ .menu__sublist-wrap {
     display: block;
   }
+  .sidebar {
+    position: static;
+    width: 100%;
+  }
+  .sidebar__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main {
+    width: 100%;
+  }
+  .history__list .history__year,
+  .history__list span {
+    margin-right: 45px;
+  }
 }
 @media (max-width: 766px) {
   .wrapper {
@@ -2140,6 +2211,8 @@ button.swiper-pagination-bullet {
   .catalog__list {
     max-width: 50%;
   }
+  .projects,
+  .history,
   .brand,
   .brief,
   .service,
@@ -2227,6 +2300,49 @@ button.swiper-pagination-bullet {
     font-size: 12px;
     line-height: 1.2;
   }
+  .about__figure {
+    height: 235px;
+    margin-bottom: 20px;
+  }
+  .projects__img,
+  .about__img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .title-h3-norm,
+  h3 {
+    font-size: 24px;
+  }
+  .history__block {
+    margin-top: 0;
+    padding-top: 50px;
+  }
+  .history__block::after {
+    top: 65px;
+    height: 800px;
+  }
+  .history__list .history__year,
+  .history__list span {
+    font-size: 36px;
+    margin-bottom: 212px;
+  }
+  .projects__text {
+    max-width: 100%;
+  }
+  .facilities__item {
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  .facilities__item:nth-child(3n),
+  .facilities__item:nth-child(3n+1) {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .contacts__block {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 480px) {
   .service__list {
@@ -2276,16 +2392,32 @@ button.swiper-pagination-bullet {
   .menu__sublist-wrap {
     left: 185%;
   }
+  .history__block {
+    padding: 30px 20px;
+  }
+  .history__block::after {
+    display: none;
+  }
+  .history__list .history__item:last-child .history__year,
+  .history__list .history__item:last-child span,
+  .history__list .history__year,
+  .history__list span {
+    margin-bottom: 20px;
+  }
+  .history__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__figure {
+    height: 170px;
+  }
+  .about__wrap {
+    text-align: left;
+  }
 }
 @media (orientation: landscape) {
   .modal {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-  .modal__form {
-    margin-top: 0;
-  }
-  .modal__title {
-    margin: 0;
   }
 }
