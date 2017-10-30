@@ -57,7 +57,10 @@
   }
   
   .brief__wrap {
+    justify-content: center;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .brief__select,
@@ -67,6 +70,11 @@
   
   .brief__field {
     margin-right: 20px;
+  }
+  
+  .brief__field-area {
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .brief__btn {
@@ -258,10 +266,17 @@
   .brief__content,
   .brief__wrap {
     justify-content: center;
+    width: 420px;
   }
   
   .brief__content {
     margin-top: 10px;
+  }
+  
+  .brief__field--wide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .service__item {
@@ -361,8 +376,15 @@
     max-width: 100%;
   }
   
+  .brief__content,
+  .brief__wrap {
+    width: 240px;
+    align-items: center;
+  }
+  
   .brief__field-area {
     margin-right: 0;
+    width: 240px;
   }
   
   .menu__link {
@@ -396,8 +418,6 @@
   .modal {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: none;
-    border-bottom: none;
   }
   
   .modal__form {
