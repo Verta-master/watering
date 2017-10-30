@@ -454,6 +454,7 @@ button {
   width: 150px;
   font-size: 12px;
   line-height: 1.1;
+  color: #000;
 }
 .call {
   display: -ms-flexbox;
@@ -503,6 +504,7 @@ button {
 }
 .user__link {
   display: block;
+  cursor: pointer;
   color: #000;
   font-size: 13px;
   padding-left: 35px;
@@ -534,6 +536,130 @@ button {
 }
 .user__link--login::before {
   background-image: url(../img/icon-padlock.png);
+}
+.user__cart {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 20;
+  padding-top: 30px;
+  transform: translateX(-34%);
+}
+.user__cart-wrap {
+  position: relative;
+}
+.user__cart-wrap:hover .user__cart {
+  display: block;
+}
+.user__list {
+  background-color: #fff;
+  border: 1px solid #bbbdc0;
+  min-width: 515px;
+  padding: 10px 20px;
+}
+.user__list::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #bbbdc0;
+  border-right: none;
+  border-bottom: none;
+  transform: rotate(45deg) translateX(-50%);
+}
+.user__field,
+.user__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.user__field {
+  margin: 0;
+}
+.user__item {
+  padding: 10px 0;
+  border-bottom: 1px dotted rgba(230, 231, 232, 0.5);
+}
+.user__item:last-child {
+  border-bottom: none;
+  padding-top: 15px;
+}
+.user__name,
+.user__model {
+  font-size: 14px;
+}
+.user__wrap {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user__name {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  max-width: 155px;
+}
+.user__model {
+  width: 90px;
+}
+.user__btn {
+  width: 25px;
+  height: 25px;
+  background-color: #00adef;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+}
+.user__input {
+  width: 50px;
+  height: 25px;
+  border: none;
+  background-color: #00adef;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  outline: none;
+}
+.user__price {
+  font-size: 14px;
+  font-weight: 700;
+  width: 96px;
+  text-align: center;
+}
+.user__total {
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 700;
+}
+.user__buy {
+  width: 222px;
+  height: 35px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.user__close {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-image: url(../img/icon-cross-red.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+  outline: none;
+}
+.user__open {
+  display: none;
 }
 .menu {
   display: -ms-flexbox;
@@ -600,7 +726,8 @@ button {
 .menu__sublink {
   font-size: 14px;
   color: #000;
-  line-height: 40px;
+  min-height: 40px;
+  padding: 10px 0;
   display: block;
   width: 100%;
   border-bottom: 1px dotted #bbbdc0;
@@ -2029,6 +2156,15 @@ button.swiper-pagination-bullet {
   .contacts__block {
     padding-right: 0;
   }
+  .user__cart {
+    transform: translateX(-40%);
+  }
+  .user__cart-wrap:hover .user__cart {
+    display: none;
+  }
+  .user__open:checked ~ .user__cart {
+    display: block;
+  }
 }
 @media (max-width: 1000px) {
   .brief__form {
@@ -2340,6 +2476,28 @@ button.swiper-pagination-bullet {
         justify-content: center;
   }
   .contacts__block {
+    width: 100%;
+    text-align: center;
+  }
+  .user__list {
+    min-width: 280px;
+    width: 280px;
+  }
+  .user__cart {
+    left: 0;
+    transform: translateX(0);
+  }
+  .user__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .user__wrap {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .user__total {
+    display: block;
+    margin-bottom: 20px;
     width: 100%;
     text-align: center;
   }
