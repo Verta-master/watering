@@ -99,6 +99,12 @@
   .about__pic-2::before {
     right: 0;
   }
+  
+  .steps__block {
+    &:nth-child(2) {
+      padding-right: 0;
+    }
+  }
 }
 
 //----------------------------------
@@ -261,6 +267,12 @@
   .history__list span {
     margin-right: 45px;
   }
+  
+  .steps__block {
+    &:nth-child(2) {
+      padding-left: 10px;
+    }
+  }
 }
 
 //-------------------------------------
@@ -321,6 +333,7 @@
     max-width: 50%;
   }
   
+  .steps,
   .about--project,
   .title__sub--service,
   .projects,
@@ -525,6 +538,14 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  
+  .steps__field {
+    padding-left: 45px;
+    
+    a {
+      font-size: 18px;
+    }
+  }
 }
 
 //-----------------------------------
@@ -619,6 +640,14 @@
     padding: 0;
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+  
+  .steps__wrap {
+    display: block;
+  }
+  
+  .steps__block {
+    width: 100%;
   }
 }
 
