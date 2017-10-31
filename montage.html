@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Системы автоматического полива HUNTER: Компания</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header wrapper">
+    <div class="header__top">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo" class="logo__img" width="142" height="49">
+        <p class="logo__text">Профессиональные системы полива из США и Европы</p>
+      </a>
+      <div class="user">
+        <div class="user__cart-wrap">
+          <input type="checkbox" name="open" id="open" class="user__open">
+          <label for="open" class="user__link user__link--cart"><span>Товаров в корзине: <b>12</b></span></label>
+          <div class="user__cart">
+            <form method="post" class="user__list">
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Роторный дождеватель</span>
+                  <span class="user__model">PGJ-00</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="7">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">35 600 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Клапан</span>
+                  <span class="user__model">PGV</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="2">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">16 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Датчик</span>
+                  <span class="user__model">Mini-click</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="3">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">24 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <span class="user__total">75 600 &#8381;</span>
+                <a href="#" class="btn user__buy">Оформить покупку</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="user__login">
+          <a href="#" class="user__link user__link--login"><span>Вход для юр. лиц</span></a>
+          <a href="#" class="user__link user__link--reg"><span>Регистрация</span></a>
+        </div>
+      </div>
+      <div class="call">
+        <a href="Tel:+78002502932" class="call__phone call__phone--header">
+          <p class="call__number">8 800 250-29-32</p>
+          <span class="call__text">Бесплатный звонок</span>
+        </a>
+        <button type="button" class="btn call__btn">Перезвоните мне</button>
+      </div>
+    </div>
+    <nav class="menu menu--closed">
+      <button class="menu__btn"><span class="visually-hidden">Закрыть/Открыть меню</span></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="company.html" class="menu__link">Компания</a>
+          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
+          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="company.html#about" class="menu__sublink">О нас</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#history" class="menu__sublink">История</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#projects" class="menu__sublink">Реализованные проекты</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#facilities" class="menu__sublink">Оборудование</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#contacts" class="menu__sublink">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="catalog.html" class="menu__link">Каталог</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--active">Услуги</a>
+          <input type="checkbox" name="menu" id="drop-3" class="menu__drop">
+          <label for="drop-3" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="sell.html" class="menu__sublink">Продажа</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="project.html" class="menu__sublink">Проектирование</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__sublink">Монтаж</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="support.html" class="menu__sublink">Обслуживание</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="customer.html" class="menu__link">Покупателю</a>
+          <input type="checkbox" name="menu" id="drop-4" class="menu__drop">
+          <label for="drop-4" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="customer.html#order" class="menu__sublink">Как заказать</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#delivery" class="menu__sublink">Оплата и доставка</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#warranty" class="menu__sublink">Гарантии</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#watering" class="menu__sublink">О поливе</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#rational" class="menu__sublink">Рациональный полив</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#contacts" class="menu__sublink">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="business.html" class="menu__link">Для бизнеса</a>
+          <input type="checkbox" name="menu" id="drop-5" class="menu__drop">
+          <label for="drop-5" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 1</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 2</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <form action="#" method="get" class="search">
+        <div class="search__wrap">
+          <input type="text" name="search" class="search__input" placeholder="Поиск">
+          <button type="submit" class="search__btn"><span class="visually-hidden">Найти</span></button>
+        </div>
+      </form>
+    </nav>
+  </header>
+  
+  <main>
+    <nav class="breadcrumbs wrapper">
+      <a href="#" class="breadcrumbs__link">Главная</a>
+      <span class="breadcrumbs__link breadcrumbs__link--active">Услуги</span>
+    </nav>
+    
+    <div class="wrapper">
+      <nav class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a href="sell.html" class="sidebar__link"><span>Продажа</span></a>
+          </li>
+          <li class="sidebar__item">
+            <a href="project.html" class="sidebar__link"><span>Проектирование</span></a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link sidebar__link--active"><span>Монтаж</span></a>
+          </li>
+          <li class="sidebar__item">
+            <a href="support.html" class="sidebar__link"><span>Обслуживание</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="main">
+        <section class="about about--service">
+          <h1 class="title-h2">Услуги</h1>
+          <p class="title__sub title__sub--service">Обращаясь в нашу компанию, Вы не только получаете консультацию от специалистов и приобретаете качественное  оборудование от брендов с мировым признанием, но так же можете заказать весь спектр услуг связанных с устройством и обслуживанием  систем автоматического полива.</p>
+          <h2 class="title-h2">Монтаж</h2>
+          <figure class="about__figure">
+            <img src="img/montage.png" alt="Проектирование" class="about__img" width="982" height="380">
+          </figure>
+          <p class="about__635">Монтаж системы автоматического полива является главным этапом установки автополива.</p>
+          <p class="about__635">Если неправильно произведен монтаж автополива, то трубопровод как минимум будет протекать на дюжине стыков, а может и просто не работать совсем.</p>
+          <p class="about__635">Чтобы избежать таких проблем мы всегда осуществляем расчет и проектирование системы автополива. Монтаж полива на участке выполняется квалифицированным персоналом, который имеет опыт сдачи в эксплуатацию более 40 объектов за сезон.</p>
+        </section>
+        
+        <section class="steps">
+          <h2 class="title-h2 steps__title">Этапы выполнения монтажа</h2>
+          <div class="steps__wrap">
+            <div class="steps__block">
+              <h3 class="title__h3-norm steps__title-h3">Земляные работы:</h3>
+              <ul class="steps__list">
+                <li class="steps__item"><span>1.</span> Разметка территории</li>
+                <li class="steps__item"><span>2.</span> Раскопка траншей</li>
+                <li class="steps__item"><span>3.</span> Закопка траншей</li>
+              </ul>
+              <h3 class="title__h3-norm steps__title-h3">Монтаж системы автополива:</h3>
+              <ul class="steps__list">
+                <li class="steps__item"><span>1.</span> Подготовка оборудования</li>
+                <li class="steps__item"><span>2.</span> Укладка трассы автополива</li>
+                <li class="steps__item"><span>3.</span> Подключение насоса, установка емкостей для воды.</li>
+                <li class="steps__item"><span>4.</span> Настройка пульта управления</li>
+                <li class="steps__item"><span>5.</span> Пусконаладочные работы</li>
+              </ul>
+            </div>
+            <div class="steps__block">
+              <h3 class="title__h3-norm steps__title-h3">Есть вопросы о монтаже?</h3>
+              <p>Вы можете связаться с нашими специалистами по телефону или электронной почте и задать им любой вопрос.</p>
+              <ul class="steps__contacts">
+                <li class="steps__field">
+                  <a href="Tel:+78129173563" class="steps__link">+7 812 917-35-63</a>
+                  <p>получить консультацию или, например, вызвать специалиста кампании на объект для консультации и замера участка.</p>
+                </li>
+                <li class="steps__field">
+                  <a href="mailto:manager@hunterirrigation.ru" class="steps__link">manager@hunterirrigation.ru</a>
+                  <p>отправить заявку, готовый список оборудования или предложение о сотрудничестве.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+  
+  <footer class="footer wrapper">
+    <div class="footer__wrap">
+      <span class="footer__copyright">© 2017 Hunter</span>
+      <a href="#" class="footer__link">Политика конфиденциальности</a>
+    </div>
+    <div class="social">
+      <a href="#" class="social__link">
+        <img src="img/icon-fb.svg" alt="Facebook" class="social__img" width="35" height="35">
+      </a>
+      <a href="#" class="social__link">
+        <img src="img/icon-tw.svg" alt="Twitter" class="social__img" width="23" height="23">
+      </a>
+      <a href="#" class="social__link">
+        <img src="img/icon-google.svg" alt="Google plus" class="social__img" width="23" height="23">
+      </a>
+    </div>
+  </footer>
+  
+<!-- Call window -->
+  <div style="display: none;">
+    <div class="modal" id="modal">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Отправить заявку</h2>
+        <p class="modal__text">Хотите узнать, сколько будет стоить монтаж на вашем участке? Оставте заявку, наш специалист сам позвонит Вам и ответит на все вопросы.</p>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-call" class="modal__input" required>
+            <label for="name-call" class="modal__label">Как к Вам обращаться?</label>
+          </div>
+          <div class="modal__field">
+            <input type="tel" name="phone" id="phone-call" class="modal__input modal__input--phone" required>
+            <label for="phone-call" class="modal__label">На какой номер звонить?</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-call" class="modal__input">
+            <label for="email-call" class="modal__label">Ваша почта, чтобы мы могли Вам написать</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Login window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-login">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Вход</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-login" class="modal__input" required>
+            <label for="name-login" class="modal__label">Ваш логин</label>
+          </div>
+          <div class="modal__field">
+            <input type="password" name="password" id="pass-login" class="modal__input" required>
+            <label for="pass-login" class="modal__label">Ваш пароль</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-login" class="modal__input" required>
+            <label for="email-login" class="modal__label">Ваша почта</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Войти</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Registration window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-reg">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Регистрация</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-reg" class="modal__input" required>
+            <label for="name-reg" class="modal__label">Как к Вам обращаться?</label>
+          </div>
+          <div class="modal__field">
+            <input type="password" name="password" id="pass-reg" class="modal__input" required>
+            <label for="pass-reg" class="modal__label">Ваш пароль</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-reg" class="modal__input" required>
+            <label for="email-reg" class="modal__label">Ваша почта</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  <script src="js/script.js"></script>
+  
+<!-- Modal windows -->
+  <script>
+    $(".call__btn").click(function(){
+      $(function(){
+        $("#modal").arcticmodal();
+      });
+    });
+    $(".user__link--login").click(function(){
+      $(function(){
+        $("#modal-login").arcticmodal();
+      });
+    });
+    $(".user__link--reg").click(function(){
+      $(function(){
+        $("#modal-reg").arcticmodal();
+      });
+    });
+  </script>
+  
+<!-- Map -->
+  <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
+  <script>
+    var myMap;
+    ymaps.ready(init); // API loading
+    function init () {
+      myMap = new ymaps.Map("map", {
+        center: [59.923929, 30.443736], // map center
+        zoom: 14 // Zoom
+      });
+      //custom marker
+      var myPlacemark = new ymaps.Placemark([59.923929, 30.443736] , {},
+        { iconLayout: "default#image",
+          iconImageHref: "img/pin.png",
+          iconImageSize: [186, 65],
+          iconImageOffset: [-20, -47] });     
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
+</body>
+</html>
