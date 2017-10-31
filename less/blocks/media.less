@@ -105,6 +105,20 @@
       padding-right: 0;
     }
   }
+  
+  .about__pic-3 {
+    width: 265px;
+  }
+  
+  .about__pic-4 {
+    width: 212px;
+  }
+  
+  .about__blow,
+  .about__635 {
+    max-width: 60%;
+    padding-right: 0;
+  }
 }
 
 //----------------------------------
@@ -254,6 +268,7 @@
     width: 100%;
   }
   
+  .sidebar__sublist,
   .sidebar__list {
     display: flex;
     flex-wrap: wrap;
@@ -333,9 +348,9 @@
     max-width: 50%;
   }
   
-  .steps,
-  .about--project,
+  .about,
   .title__sub--service,
+  .steps,
   .projects,
   .history,
   .brand,
@@ -521,6 +536,7 @@
     width: 100%;
   }
   
+  .about__pic-4,
   .about__pic-2,
   .about__pic-1 {
     height: 285px;
@@ -530,13 +546,34 @@
     justify-content: center;
   }
   
+  .about__pic-3 {
+    margin-bottom: 0;
+    justify-content: center;
+    
+    img {
+      margin-left: -70px;
+    }
+  }
+  
   .about__pic-1::before,
-  .about__pic-2::before {
+  .about__pic-2::before,
+  .about__pic-3::before, 
+  .about__pic-4::before {
     height: 285px;
     width: 200px;
     right: auto;
     left: 50%;
     transform: translateX(-50%);
+  }
+  
+  .about__pic-4::after {
+    right: 20%;
+  }
+  
+  .about__caption {
+    width: 100%;
+    text-align: center;
+    margin: 0;
   }
   
   .steps__field {
@@ -545,6 +582,15 @@
     a {
       font-size: 18px;
     }
+  }
+  
+  .about__blow,
+  .about__635 {
+    max-width: none;
+  }
+  
+  .about__call {
+    width: auto;
   }
 }
 
@@ -648,6 +694,10 @@
   
   .steps__block {
     width: 100%;
+  }
+  
+  .about__pic-4::after {
+    right: 0;
   }
 }
 

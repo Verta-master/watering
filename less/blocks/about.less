@@ -8,6 +8,10 @@
   &--project {
     margin-bottom: 90px;
   }
+  
+  &--support {
+    margin-bottom: 70px;
+  }
 }
 
 .about__figure {
@@ -65,8 +69,20 @@
   max-width: 830px;
 }
 
+.about__700 {
+  max-width: 700px;
+}
+
 .about__635 {
   max-width: 635px;
+}
+
+.about__600 {
+  max-width: 600px;
+  
+  p {
+    margin-top: 0;
+  }
 }
 
 .about__logo {
@@ -149,4 +165,112 @@
     border: 11px solid @blue;
     z-index: -1;
   }
+}
+
+.about__pic-3 {
+  width: 265px;
+  height: 340px;
+  padding-right: 0;
+  padding-top: 45px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 226px;
+    height: 307px;
+    border: 11px solid @blue;
+    z-index: -1;
+  }
+}
+
+.about__pic-4 {
+  width: 212px;
+  height: 384px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 151px;
+    height: 384px;
+    border: 11px solid @blue;
+    z-index: -1;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 41px;
+    height: 39px;
+    background-image: url(../img/snowflake.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.about__caption {
+  color: #000;
+  margin-top: auto;
+  margin-left: 38px;
+  
+  span {
+    border-bottom: 1px solid @blue;
+  }
+  
+  &:hover span,
+  &:active span {
+    border-bottom: 1px dotted @blue;
+  }
+}
+
+.about__main {
+  width: 250px;
+  height: 35px;
+  margin-top: 20px;
+}
+
+.about__start {
+  width: 250px;
+  height: 35px;
+}
+
+.about__service {
+  width: 228px;
+  height: 35px;
+}
+
+.about__blow {
+  max-width: 678px;
+  padding-right: 150px;
+  margin-top: 30px;
+}
+
+.about__call {
+  width: 302px;
+
+  .title__h3-norm {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.about__h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
 }

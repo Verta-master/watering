@@ -28,6 +28,27 @@
 
 .steps__list {
   margin-bottom: 50px;
+  
+  &--service {
+    margin-bottom: 25px;
+  }
+  
+  &--support {
+    margin-top: -5px;
+    margin-bottom: 20px;
+    
+    .steps__item {
+      padding-left: 17px;
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .steps__item {
@@ -57,6 +78,11 @@
     margin-top: 10px;
   }
   
+  &--service {
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+  
   &::before {
     content: "";
     position: absolute;
@@ -69,6 +95,7 @@
     background-position: center;
   }
   
+  &--service::before,
   &:first-child::before {
     background-image: url(../img/icon-phone.svg);
     background-size: 22px 22px;
