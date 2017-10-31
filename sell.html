@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Системы автоматического полива HUNTER: Компания</title>
+  <title>Системы автоматического полива HUNTER: Продажа</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -403,27 +403,6 @@
         $("#modal-reg").arcticmodal();
       });
     });
-  </script>
-  
-<!-- Map -->
-  <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
-  <script>
-    var myMap;
-    ymaps.ready(init); // API loading
-    function init () {
-      myMap = new ymaps.Map("map", {
-        center: [59.923929, 30.443736], // map center
-        zoom: 14 // Zoom
-      });
-      //custom marker
-      var myPlacemark = new ymaps.Placemark([59.923929, 30.443736] , {},
-        { iconLayout: "default#image",
-          iconImageHref: "img/pin.png",
-          iconImageSize: [186, 65],
-          iconImageOffset: [-20, -47] });     
-
-      myMap.geoObjects.add(myPlacemark);
-    }
   </script>
 </body>
 </html>

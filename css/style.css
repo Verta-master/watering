@@ -1932,6 +1932,9 @@ button.swiper-pagination-bullet {
 .sidebar__item {
   margin-bottom: 13px;
 }
+.sidebar__subitem {
+  padding-left: 12px;
+}
 .main {
   width: 982px;
   margin-left: auto;
@@ -1944,6 +1947,9 @@ button.swiper-pagination-bullet {
 }
 .about--project {
   margin-bottom: 90px;
+}
+.about--support {
+  margin-bottom: 70px;
 }
 .about__figure {
   margin: 0;
@@ -1997,8 +2003,17 @@ button.swiper-pagination-bullet {
 .about__830 {
   max-width: 830px;
 }
+.about__700 {
+  max-width: 700px;
+}
 .about__635 {
   max-width: 635px;
+}
+.about__600 {
+  max-width: 600px;
+}
+.about__600 p {
+  margin-top: 0;
 }
 .about__logo {
   float: right;
@@ -2075,6 +2090,106 @@ button.swiper-pagination-bullet {
   height: 285px;
   border: 11px solid #00adef;
   z-index: -1;
+}
+.about__pic-3 {
+  width: 265px;
+  height: 340px;
+  padding-right: 0;
+  padding-top: 45px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+.about__pic-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 226px;
+  height: 307px;
+  border: 11px solid #00adef;
+  z-index: -1;
+}
+.about__pic-4 {
+  width: 212px;
+  height: 384px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.about__pic-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 151px;
+  height: 384px;
+  border: 11px solid #00adef;
+  z-index: -1;
+}
+.about__pic-4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 41px;
+  height: 39px;
+  background-image: url(../img/snowflake.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about__caption {
+  color: #000;
+  margin-top: auto;
+  margin-left: 38px;
+}
+.about__caption span {
+  border-bottom: 1px solid #00adef;
+}
+.about__caption:hover span,
+.about__caption:active span {
+  border-bottom: 1px dotted #00adef;
+}
+.about__main {
+  width: 250px;
+  height: 35px;
+  margin-top: 20px;
+}
+.about__start {
+  width: 250px;
+  height: 35px;
+}
+.about__service {
+  width: 228px;
+  height: 35px;
+}
+.about__blow {
+  max-width: 678px;
+  padding-right: 150px;
+  margin-top: 30px;
+}
+.about__call {
+  width: 302px;
+}
+.about__call .title__h3-norm {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.about__h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 .history {
   margin-bottom: 105px;
@@ -2228,6 +2343,23 @@ button.swiper-pagination-bullet {
 .steps__list {
   margin-bottom: 50px;
 }
+.steps__list--service {
+  margin-bottom: 25px;
+}
+.steps__list--support {
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+.steps__list--support .steps__item {
+  padding-left: 17px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.steps__list--support span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .steps__item {
   margin-bottom: 10px;
 }
@@ -2250,6 +2382,10 @@ button.swiper-pagination-bullet {
 .steps__field p {
   margin-top: 10px;
 }
+.steps__field--service {
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
 .steps__field::before {
   content: "";
   position: absolute;
@@ -2261,6 +2397,7 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-position: center;
 }
+.steps__field--service::before,
 .steps__field:first-child::before {
   background-image: url(../img/icon-phone.svg);
   background-size: 22px 22px;
@@ -2355,6 +2492,17 @@ button.swiper-pagination-bullet {
     right: 0;
   }
   .steps__block:nth-child(2) {
+    padding-right: 0;
+  }
+  .about__pic-3 {
+    width: 265px;
+  }
+  .about__pic-4 {
+    width: 212px;
+  }
+  .about__blow,
+  .about__635 {
+    max-width: 60%;
     padding-right: 0;
   }
 }
@@ -2476,6 +2624,7 @@ button.swiper-pagination-bullet {
     position: static;
     width: 100%;
   }
+  .sidebar__sublist,
   .sidebar__list {
     display: -ms-flexbox;
     display: flex;
@@ -2542,9 +2691,9 @@ button.swiper-pagination-bullet {
   .catalog__list {
     max-width: 50%;
   }
-  .steps,
-  .about--project,
+  .about,
   .title__sub--service,
+  .steps,
   .projects,
   .history,
   .brand,
@@ -2703,6 +2852,7 @@ button.swiper-pagination-bullet {
   .about__right {
     width: 100%;
   }
+  .about__pic-4,
   .about__pic-2,
   .about__pic-1 {
     height: 285px;
@@ -2712,19 +2862,44 @@ button.swiper-pagination-bullet {
     -ms-flex-pack: center;
         justify-content: center;
   }
+  .about__pic-3 {
+    margin-bottom: 0;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .about__pic-3 img {
+    margin-left: -70px;
+  }
   .about__pic-1::before,
-  .about__pic-2::before {
+  .about__pic-2::before,
+  .about__pic-3::before,
+  .about__pic-4::before {
     height: 285px;
     width: 200px;
     right: auto;
     left: 50%;
     transform: translateX(-50%);
   }
+  .about__pic-4::after {
+    right: 20%;
+  }
+  .about__caption {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
   .steps__field {
     padding-left: 45px;
   }
   .steps__field a {
     font-size: 18px;
+  }
+  .about__blow,
+  .about__635 {
+    max-width: none;
+  }
+  .about__call {
+    width: auto;
   }
 }
 @media (max-width: 480px) {
@@ -2809,6 +2984,9 @@ button.swiper-pagination-bullet {
   }
   .steps__block {
     width: 100%;
+  }
+  .about__pic-4::after {
+    right: 0;
   }
 }
 @media (orientation: landscape) {
