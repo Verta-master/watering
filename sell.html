@@ -82,25 +82,25 @@
       <button class="menu__btn"><span class="visually-hidden">Закрыть/Открыть меню</span></button>
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="menu__link menu__link--active">Компания</a>
+          <a href="company.html" class="menu__link">Компания</a>
           <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
           <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
           <div class="menu__sublist-wrap">
             <ul class="menu__sublist">
               <li class="menu__subitem">
-                <a href="#about" class="menu__sublink">О нас</a>
+                <a href="company.html#about" class="menu__sublink">О нас</a>
               </li>
               <li class="menu__subitem">
-                <a href="#history" class="menu__sublink">История</a>
+                <a href="company.html#history" class="menu__sublink">История</a>
               </li>
               <li class="menu__subitem">
-                <a href="#projects" class="menu__sublink">Реализованные проекты</a>
+                <a href="company.html#projects" class="menu__sublink">Реализованные проекты</a>
               </li>
               <li class="menu__subitem">
-                <a href="#facilities" class="menu__sublink">Оборудование</a>
+                <a href="company.html#facilities" class="menu__sublink">Оборудование</a>
               </li>
               <li class="menu__subitem">
-                <a href="#contacts" class="menu__sublink">Контакты</a>
+                <a href="company.html#contacts" class="menu__sublink">Контакты</a>
               </li>
             </ul>
           </div>
@@ -109,13 +109,13 @@
           <a href="catalog.html" class="menu__link">Каталог</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Услуги</a>
+          <a href="#" class="menu__link menu__link--active">Услуги</a>
           <input type="checkbox" name="menu" id="drop-3" class="menu__drop">
           <label for="drop-3" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
           <div class="menu__sublist-wrap">
             <ul class="menu__sublist">
               <li class="menu__subitem">
-                <a href="sell.html" class="menu__sublink">Продажа</a>
+                <a class="menu__sublink">Продажа</a>
               </li>
               <li class="menu__subitem">
                 <a href="project.html" class="menu__sublink">Проектирование</a>
@@ -184,138 +184,103 @@
   <main>
     <nav class="breadcrumbs wrapper">
       <a href="#" class="breadcrumbs__link">Главная</a>
-      <span class="breadcrumbs__link breadcrumbs__link--active">Компания</span>
+      <span class="breadcrumbs__link breadcrumbs__link--active">Услуги</span>
     </nav>
     
     <div class="wrapper">
       <nav class="sidebar">
         <ul class="sidebar__list">
           <li class="sidebar__item">
-            <a href="#about" class="sidebar__link sidebar__link--active"><span>О нас</span></a>
+            <a class="sidebar__link sidebar__link--active"><span>Продажа</span></a>
           </li>
           <li class="sidebar__item">
-            <a href="#history" class="sidebar__link"><span>История</span></a>
+            <a href="project.html" class="sidebar__link"><span>Проектирование</span></a>
           </li>
           <li class="sidebar__item">
-            <a href="#projects" class="sidebar__link"><span>Реализованные проекты</span></a>
+            <a href="montage.html" class="sidebar__link"><span>Монтаж</span></a>
           </li>
           <li class="sidebar__item">
-            <a href="#facilities" class="sidebar__link"><span>Оборудование</span></a>
-          </li>
-          <li class="sidebar__item">
-            <a href="#contacts" class="sidebar__link"><span>Контакты</span></a>
+            <a href="support.html" class="sidebar__link"><span>Обслуживание</span></a>
           </li>
         </ul>
       </nav>
 
       <article class="main">
-        <section class="about" id="about">
-          <h1 class="title-h2">Компания</h1>
+        <section class="about about--service">
+          <h1 class="title-h2">Услуги</h1>
+          <p class="title__sub title__sub--service">Обращаясь в нашу компанию, Вы не только получаете консультацию от специалистов и приобретаете качественное  оборудование от брендов с мировым признанием, но так же можете заказать весь спектр услуг связанных с устройством и обслуживанием  систем автоматического полива.</p>
+          <h2 class="title-h2">Продажа</h2>
           <figure class="about__figure">
             <img src="img/company.jpg" alt="Компания" class="about__img" width="982" height="380">
           </figure>
+          <h3 class="title-h3-norm">Когда вам необходимо<br>оборудование для автополива?</h3>
+          <p class="about__wide">Своевременный и качественный полив участка – непростая задача для многих объектов, будь то загородная дача, городской парк или спортивный газон. Засуха, уклон, жесткая вода или тяжелая почва способны погубить насаждения в считанные дни, или же привести к их постепенному отмиранию. Здесь озеленителям и садоводам придет на помощь система автополива, сконструированная с учетом конкретного ландшафта.</p>
+          <p class="about__wide">Профессионалы заказывают <a href="#">оборудование для автополива</a> у проверенного производителя, обеспечивает наилучшие результаты.</p>
+          
           <div class="about__text">
-            <div class="about__wrap">
-              <p>С 2008 года мы являемся профессиональными участниками российского рынка поливочных систем, занимаясь поставкой оборудования лучших мировых брендов для орошения.</p>
-              <p>Полученная за эти годы практика и накопленный опыт позволяют нам подобрать самые оптимальные и удобные варианты в каждом конкретном случае. Мы беремся даже за выполнение максимально сложных задач и подбираем самый оптимальный вариант. Разработка проектов нашими инженерами ведется с учетом специфики ландшафта, посадок и пожеланий заказчика. А обязательное присутствие на объекте ведущего специалиста, осуществляющего контроль за выполнением работ, гарантирует качество выполненных работ.</p>
-              <p>Тем не менее, мы не собираемся останавливаться на достигнутом, а постоянно изучаем инновационные технологии и постепенно внедряем их в свое производство, стремясь минимизировать затраты на монтаж и дальнейшее обслуживание систем полива.</p>
-              <p>Широкий ассортимент качественной продукции, дружный коллектив специалистов, квалифицированный сервис — вот основные аргументы для выбора нашей компании в качестве Вашего партнера.</p>
+            <div class="about__left about__pic-1">
+              <img src="img/controller_mockup.png" alt="Система" width="409" height="293">
             </div>
-            <aside class="about__aside">Сейчас мы развиваем новое направление – сельскохозяйственный полив для питомников, садовых центров, агрофирм и фермерских хозяйств.</aside>
+            <div class="about__right">
+              <h3 class="title-h3-norm">Система состоит<br>из следующих компонентов:</h3>
+              <ul class="about__list">
+                <li class="about__item">
+                  <a href="#">Сеть полимерных трубок, снабженная фитингами и запорной арматурой</a>
+                </li>
+                <li class="about__item">
+                  <a href="#">Система фильтрации (механической и химической)</a>
+                </li>
+                <li class="about__item">
+                  <a href="#">Резервуары для воды в автономной системе</a>
+                </li>
+                <li class="about__item">
+                  <a href="#">Гидранты для водопроводного подключения в открытой системе</a>
+                </li>
+                <li class="about__item">
+                  <a href="#">Насосное оборудование</a>
+                </li>
+                <li class="about__item">
+                  <a href="#">Пульт управления</a>
+                </li>
+                <li class="about__item">
+                  <a href="#">Метеодатчики</a>
+                </li>
+                <li class="about__item">
+                  <a href="#">Электро-магнитные клапаны</a>
+                </li>
+                <li class="about__item">
+                  <a href="#">Дождеватели (роторные и веерные)</a>
+                </li>
+              </ul>
+              <p>Для слаженной и эффективной работы всех частей системы необходима идеальная подгонка деталей, которой невозможно добиться, собирая дождевальную установку из подручных материалов.</p>
+            </div>
           </div>
-        </section>
-        
-        <section class="history" id="history">
-          <h2 class="title-h2">История</h2>
-          <h3 class="title-h3-norm">Этапы становления компании</h3>
-          <div class="history__block">
-            <ul class="history__list">
-              <li class="history__item">
-                <span class="history__year">2008</span>
-                <p class="history__text">Начало развития — руководитель ПОЛИВ СЕРВИС открывает ИП и с командой единомышленников начинают выполнять первые объекты по проектированию и монтажу систем автоматического полива на загородных участках.</p>
-              </li>
-              <li class="history__item">
-                <span class="history__year">2012</span>
-                <p class="history__text">Открыт первый в России интернет-магазин<br>систем автоматического полива под<br>названием «Садовник Вилли».</p>
-              </li>
-              <li class="history__item">
-                <span class="history__year">2015</span>
-                <p class="history__text">Новый виток развития. Мы не стоим<br>на месте и в феврале 2015 открыта фирма ООО «ПС», работающая с НДС. Начали активное продвижение сельскохозяйственного полива и сотрудничество с фермерами, тепличными хозяйствами, питомниками, ландшафтными и строительными организациями.</p>
-              </li>
-              <li class="history__item">
-                <span class="history__year">2017</span>
-                <p class="history__text">История пишется прямо сейчас,<br>вместе с нашими клиентами...</p>
-              </li>
-            </ul>
+          
+          <div class="about__text">
+            <div class="about__left">
+              <h3 class="title-h3-norm">Как работают дождеватели?</h3>
+              <p>Дождеватель – это устройство для площадного полива, незаменимое как на газоне, так и на грядках. Струи воды из вращающегося распылителя равномерно орошают максимальную площадь почвы, в отличие от системы капельного полива (популярного в теплицах), обмывая растения сверху. Для открытого грунта и городских насаждений, осаждающих на себе массу пыли, это особенно важно.<br>
+              Дождеватели легко подключаются к системе автополива в любой точке, их можно перемещать по участку по мере необходимости. Больше не нужно ходить по грядкам с лейкой или держать шланг над газоном, автоматическая система сделает все сама!</p>
+            </div>
+            <div class="about__right about__pic-2">
+              <img src="img/prs40_clipped.png" alt="Дождеватель" width="228" height="228">
+            </div>
           </div>
-        </section>
-        
-        <section class="projects" id="projects">
-          <h2 class="title-h2">Реализованные проекты</h2>
-          <p class="title__sub">Мы очень гордимся проектами, которые мы реализуем под ключ, так как мы вкладываем душу в каждый этап работы — от проектирования участка до монтажа всех систем. Вот некоторые проекты, которые мы реализовали:</p>
-          <ul class="projects__list">
-            <li class="projects__item">
-              <img src="img/project-1.jpg" alt="Реализованные проекты" class="projects__img" width="982" height="360">
-              <div class="projects__text">
-                <h3 class="title-h3"><span>Зона отдыха вокруг стадиона Донбасс-арена</span></h3>
-                <aside class="projects__place">Донецк, Украина</aside>
-              </div>
-            </li>
-            <li class="projects__item">
-              <img src="img/project-2.jpg" alt="Реализованные проекты" class="projects__img" width="982" height="360">
-              <div class="projects__text projects__text--right">
-                <h3 class="title-h3"><span>Парк победы</span></h3>
-                <aside class="projects__place">Кисловодск, Ставропольский край</aside>
-              </div>
-            </li>
-            <li class="projects__item">
-              <img src="img/project-3.jpg" alt="Реализованные проекты" class="projects__img" width="982" height="360">
-              <div class="projects__text">
-                <h3 class="title-h3"><span>Гольф-клуб Олимпийский-Догомыс</span></h3>
-                <aside class="projects__place">Сочи, Краснодарский край</aside>
-              </div>
-            </li>
-          </ul>
-        </section>
-        
-        <section class="facilities" id="facilities">
-          <h2 class="title-h2">Наше оборудование</h2>
-          <p class="title__sub">Компания «Полив Сервис» в первую очередь заботится о качестве поставляемой продукции, поэтому мы работаем только с проверенными мировыми лидерами.</p>
-          <p class="title__sub title__sub--wide">Продукция партнеров в нашем каталоге: <a href="#">Анион</a> <a href="#">Espa</a> <a href="#">Hunter</a> <a href="#">Irritec</a> <a href="#">Raindrip</a> <a href="#">FXLuminaire</a></p>
-          <ul class="facilities__list">
-            <li class="facilities__item">
-              <img src="img/logo-anion.jpg" alt="anion" width="222" height="50">
-            </li>
-            <li class="facilities__item">
-              <img src="img/logo-raindrip.jpg" alt="raindrip" width="235" height="57">
-            </li>
-            <li class="facilities__item">
-              <img src="img/logo-hunter.jpg" alt="hunter" width="186" height="42">
-            </li>
-            <li class="facilities__item">
-              <img src="img/logo-irritec.jpg" alt="irritec" width="204" height="48">
-            </li>
-            <li class="facilities__item">
-              <img src="img/logo-espa.jpg" alt="espa" width="186" height="64">
-            </li>
-            <li class="facilities__item">
-              <img src="img/logo-luminaire.png" alt="espa" width="255" height="34">
-            </li>
-          </ul>
-        </section>
-      
-        <section class="contacts contacts--company" id="contacts">
-          <h2 class="title-h2">Контакты</h2>
-          <div class="contacts__map contacts__map--company" id="map"></div>
-          <div class="contacts__wrap contacts__wrap--left">
-            <address class="contacts__block">
-              <a href="Tel:+78129173563" class="contacts__link">+7 (812) 917-35-63</a>
-              <a href="mailto:manager@hunterirrigation.ru" class="contacts__link">manager@hunterirrigation.ru</a>
-              <p class="contacts__address">Офис № 203, ул. Ворошилова, д. 6А., Санкт-Петербург.</p>
-            </address>
-            <div class="contacts__block">
-              <p class="contacts__address"><b>График работы:</b></p>
-              <p class="contacts__address">Понедельник–пятница — с 10:00 до 19:00<br>Суббота и воскресение — по договоренности</p>
+          
+          <div class="about__text">
+            <div class="about__left">
+              <h3 class="title-h3-norm">Продажа оборудования систем автоматического полива –<br>наш профиль.</h3>
+              <p>Планируя автополив на участке, важно выбрать опытного подрядчика, который поможет в планировке, расчете стоимости, монтаже и запуске вашей системы.</p>
+            </div>
+            <div class="about__right">
+              <h3 class="title-h3-norm">Чтобы сделать заказ,<br>вам требуется:</h3>
+              <ol class="about__list-num">
+                <li class="about__item">Получить консультацию у нашего специалиста, ознакомиться с прайсом;</li>
+                <li class="about__item">Вызвать специалиста на объект для составления плана местности, оценки источника воды и согласования планировки системы;</li>
+                <li class="about__item">Обсудить предоставленный специалистом проект, включающий в себя смету работ;</li>
+                <li class="about__item">Заключить договор на поставку услуг.</li>
+              </ol>
+              <p>Все работы по поставке, сборке и наладке оборудования систем автоматического полива наша компания берет на себя.</p>
             </div>
           </div>
         </section>

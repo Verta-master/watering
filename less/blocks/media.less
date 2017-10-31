@@ -89,6 +89,16 @@
   .user__open:checked ~ .user__cart {
     display: block;
   }
+  
+  .about__left,
+  .about__right {
+    width: 50%;
+    padding-right: 10px;
+  }
+  
+  .about__pic-2::before {
+    right: 0;
+  }
 }
 
 //----------------------------------
@@ -311,6 +321,7 @@
     max-width: 50%;
   }
   
+  .title__sub--service,
   .projects,
   .history,
   .brand,
@@ -489,6 +500,29 @@
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
+  }
+  
+  .about__left,
+  .about__right {
+    width: 100%;
+  }
+  
+  .about__pic-2,
+  .about__pic-1 {
+    height: 285px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-right: 0;
+    justify-content: center;
+  }
+  
+  .about__pic-1::before,
+  .about__pic-2::before {
+    height: 285px;
+    width: 200px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
