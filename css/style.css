@@ -1942,6 +1942,9 @@ button.swiper-pagination-bullet {
 .about--service {
   margin-bottom: 35px;
 }
+.about--project {
+  margin-bottom: 90px;
+}
 .about__figure {
   margin: 0;
   padding: 0;
@@ -1990,6 +1993,15 @@ button.swiper-pagination-bullet {
 .about__wide a:hover,
 .about__wide a:active {
   border-bottom: 1px dotted #00adef;
+}
+.about__830 {
+  max-width: 830px;
+}
+.about__logo {
+  float: right;
+  padding-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 .about__left {
   position: relative;
@@ -2444,6 +2456,7 @@ button.swiper-pagination-bullet {
   .catalog__list {
     max-width: 50%;
   }
+  .about--project,
   .title__sub--service,
   .projects,
   .history,
@@ -2690,6 +2703,13 @@ button.swiper-pagination-bullet {
   }
   .about__wrap {
     text-align: left;
+  }
+  .about__logo {
+    float: none;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 @media (orientation: landscape) {
