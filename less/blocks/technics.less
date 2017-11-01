@@ -1,5 +1,9 @@
 .technics {
   margin-bottom: 40px;
+  
+  &--catalog {
+    margin-bottom: 0;
+  }
 }
 
 .technics__list {
@@ -8,12 +12,13 @@
   justify-content: flex-start;
   align-content: flex-start;
   margin-top: 70px;
+  
+  &--catalog {
+    margin-top: 0;
+  }
 }
 
 .technics__item {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   width: 384px;
   height: 337px;
   margin-right: 22px;
@@ -35,6 +40,24 @@
   &:active span {
     border-bottom: 1px dotted #000;
   }
+  
+  &--catalog {
+    &:nth-child(3n) {
+      margin-right: 22px;
+    }
+    
+    &:nth-child(17),
+    &:nth-child(14),
+    &:nth-child(11),
+    &:nth-child(8),
+    &:nth-child(5) {
+      margin-right: 0;
+    }
+  }
+  
+  &--right {
+    margin-right: 0;
+  }
 }
 
 .technics__title {
@@ -55,4 +78,56 @@
 
 .technics__img {
   display: block;
+}
+
+.technics__application {
+  width: 790px;
+  padding: 28px;
+  margin-right: 22px;
+  margin-bottom: 29px;
+  background-color: rgba(0,174,239,0.5);
+  float: left;
+  position: relative;
+}
+
+.technics__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-right: 22px;
+  background-image: url(../img/bg-catalog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.technics__h3 {
+  margin-top: 0;
+}
+
+.technics__ref {
+  display: block;
+  color: #fff;
+  font-size: 19px;
+  line-height: 40px;
+  
+  span {
+    border-bottom: 1px dotted #fff;
+  }
+  
+  &:hover span,
+  &:active span {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.technics__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
 }
