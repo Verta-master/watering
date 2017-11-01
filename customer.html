@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Системы автоматического полива HUNTER: Проектирование</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header wrapper">
+    <div class="header__top">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo" class="logo__img" width="142" height="49">
+        <p class="logo__text">Профессиональные системы полива из США и Европы</p>
+      </a>
+      <div class="user">
+        <div class="user__cart-wrap">
+          <input type="checkbox" name="open" id="open" class="user__open">
+          <label for="open" class="user__link user__link--cart"><span>Товаров в корзине: <b>12</b></span></label>
+          <div class="user__cart">
+            <form method="post" class="user__list">
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Роторный дождеватель</span>
+                  <span class="user__model">PGJ-00</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="7">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">35 600 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Клапан</span>
+                  <span class="user__model">PGV</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="2">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">16 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Датчик</span>
+                  <span class="user__model">Mini-click</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="3">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">24 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <span class="user__total">75 600 &#8381;</span>
+                <a href="#" class="btn user__buy">Оформить покупку</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="user__login">
+          <a href="#" class="user__link user__link--login"><span>Вход для юр. лиц</span></a>
+          <a href="#" class="user__link user__link--reg"><span>Регистрация</span></a>
+        </div>
+      </div>
+      <div class="call">
+        <a href="Tel:+78002502932" class="call__phone call__phone--header">
+          <p class="call__number">8 800 250-29-32</p>
+          <span class="call__text">Бесплатный звонок</span>
+        </a>
+        <button type="button" class="btn call__btn">Перезвоните мне</button>
+      </div>
+    </div>
+    <nav class="menu menu--closed">
+      <button class="menu__btn"><span class="visually-hidden">Закрыть/Открыть меню</span></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="company.html" class="menu__link">Компания</a>
+          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
+          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="company.html#about" class="menu__sublink">О нас</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#history" class="menu__sublink">История</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#projects" class="menu__sublink">Реализованные проекты</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#facilities" class="menu__sublink">Оборудование</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#contacts" class="menu__sublink">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="catalog.html" class="menu__link">Каталог</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Услуги</a>
+          <input type="checkbox" name="menu" id="drop-3" class="menu__drop">
+          <label for="drop-3" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="sell.html" class="menu__sublink">Продажа</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="project.html" class="menu__sublink">Проектирование</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="montage.html" class="menu__sublink">Монтаж</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="support.html" class="menu__sublink">Обслуживание</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--active">Покупателю</a>
+          <input type="checkbox" name="menu" id="drop-4" class="menu__drop">
+          <label for="drop-4" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="#order" class="menu__sublink">Как заказать</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#delivery" class="menu__sublink">Оплата и доставка</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#warranty" class="menu__sublink">Гарантии</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#watering" class="menu__sublink">О поливе</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#rational" class="menu__sublink">Рациональный полив</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#contacts" class="menu__sublink">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="business.html" class="menu__link">Для бизнеса</a>
+          <input type="checkbox" name="menu" id="drop-5" class="menu__drop">
+          <label for="drop-5" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 1</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 2</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <form action="#" method="get" class="search">
+        <div class="search__wrap">
+          <input type="text" name="search" class="search__input" placeholder="Поиск">
+          <button type="submit" class="search__btn"><span class="visually-hidden">Найти</span></button>
+        </div>
+      </form>
+    </nav>
+  </header>
+  
+  <main>
+    <nav class="breadcrumbs wrapper">
+      <a href="#" class="breadcrumbs__link">Главная</a>
+      <span class="breadcrumbs__link breadcrumbs__link--active">Покупателю</span>
+    </nav>
+    
+    <div class="wrapper">
+      <nav class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a href="#order" class="sidebar__link sidebar__link--active"><span>Как заказать</span></a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#delivery" class="sidebar__link"><span>Оплата и доставка</span></a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#warranty" class="sidebar__link"><span>Гарантии</span></a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#watering" class="sidebar__link"><span>О поливе</span></a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#rational" class="sidebar__link"><span>Рациональный полив</span></a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#contacts" class="sidebar__link"><span>Контакты</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="main">
+        <section class="about">
+          <h1 class="title-h2">Информация для покупателей</h1>
+          <figure class="about__figure">
+            <img src="img/company.jpg" alt="Проектирование" class="about__img" width="982" height="380">
+          </figure>
+          <aside class="about__comment">
+            <p>Вы можете задать любой интересующий вопрос по телефону горячей линии:</p>
+            <a href="Tel:+78002502932" class="about__comment-link">8 800 250-29-32</a>
+            <p>Так же, вы можете оставить заявку на обратный звонок и наш специалист сам перезвонит вам в течение 10 минут.</p>
+            <button type="button" class="btn about__service call__btn">Оставить заявку</button>
+          </aside>
+          <div class="about__700">
+            <p>Наша фирма является официальным дилером Hunter, irritec и poliext — лидеров мирового рынка систем орошения для частных, общественных и сельскохозяйственных территорий.</p>
+            <p>Специалисты «Полив Сервис» имеют многолетний опыт работы с оборудованием систем автополива, знают технические тонкости, различии в оборудовании разных брендов и с удовольствием проконсультируют вас по телефону или у нас в офисе.</p>
+          </div>
+        </section>
+        
+        <section class="brief brief--order" id="order">
+          <h2 class="title-h2 brief__title">Как заказать?</h2>
+          <p>В нашей компании Вы можете сделать заказ или получить<br>консультацию следующими способами:</p>
+          <ul class="steps__contacts steps__contacts--order">
+            <li class="steps__field">
+              <span>По телефону</span>
+              <a href="Tel:+78129173563" class="steps__link">+7 812 917-35-63</a>
+              <p>получить консультацию или, например, вызвать специалиста кампании на объект для консультации и замера участка.</p>
+            </li>
+            <li class="steps__field">
+              <span>По e-mail</span>
+              <a href="mailto:manager@hunterirrigation.ru" class="steps__link">manager@hunterirrigation.ru</a>
+              <p>отправить заявку, готовый список оборудования или предложение о сотрудничестве.</p>
+            </li>
+          </ul>
+          <p>Заполнив поля, вы сможете отправить заявку для расчета системы<br>полива специально для вашего участка:</p>
+               
+          <form action="#" method="post" class="brief__order">
+            <div>
+              <div class="brief__wrap brief__wrap--mb">
+                <div class="brief__field">
+                  <label for="name" class="brief__label">Ваше имя:</label>
+                  <input type="text" name="name" id="name" class="brief__input">
+                </div>
+                <div class="brief__field">
+                  <label for="phone" class="brief__label">Номер телефона:</label>
+                  <input type="tel" name="phone" id="phone" class="brief__input">
+                </div>
+                <div class="brief__field">
+                  <label for="email" class="brief__label">Ваш e-mail:</label>
+                  <input type="email" name="email" id="email" class="brief__input">
+                </div>
+              </div>
+              <div class="brief__wrap">
+                <div class="brief__field">
+                  <label for="object" class="brief__label">Площадь объекта:</label>
+                  <input type="text" name="object" id="object" class="brief__input">
+                </div>
+                <div class="brief__field">
+                  <label for="distance" class="brief__label">Удаленность участка от СПб:</label>
+                  <input type="text" name="distance" id="distance" class="brief__input">
+                </div>
+                <div class="brief__field">
+                  <label for="height" class="brief__label">Перепад высоты:</label>
+                  <input type="text" name="height" id="height" class="brief__input">
+                  <span class="brief__comment">Укажите, имеется ли перепад высот и его размер</span>
+                </div>
+              </div>
+            </div>
+            <div class="brief__wrap brief__wrap--mt">
+              <div class="brief__field">
+                <span class="brief__label">Источник воды на участке:</span>
+                <input type="checkbox" name="drop" id="drop" class="brief__drop">
+                <label for="drop" class="brief__select brief__select--wide">Выбрать</label>
+                <div class="brief__source brief__source--wide">
+                  <span class="brief__label brief__label--source">Источник 1</span>
+                  <span class="brief__label brief__label--source">Источник 2</span>
+                  <span class="brief__label brief__label--source">Источник 3</span>
+                </div>
+              </div>
+              <div class="brief__field brief__field-area">
+                <label for="comment" class="brief__label">Ваш комментарий:</label>
+                <textarea name="comment" id="comment" class="brief__area brief__area--order"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn brief__btn-order">Оставить заявку на расчет</button>
+          </form>
+        </section>
+        
+        <section class="about" id="delivery">
+          <h2 class="title-h2">Оплата и доставка</h2>
+          <figure class="about__figure">
+            <img src="img/company.jpg" alt="Компания" class="about__img" width="982" height="380">
+          </figure>
+          <div class="about__700">
+            <p>Наша фирма является официальным дилером Hunter, irritec и poliext — лидеров мирового рынка систем орошения для частных, общественных и сельскохозяйственных территорий.</p>
+            <p>Специалисты «Полив Сервис» имеют многолетний опыт работы с оборудованием систем автополива, знают технические тонкости, различии в оборудовании разных брендов и с удовольствием проконсультируют вас по телефону или у нас в офисе.</p>
+          </div>
+        </section>
+        
+        <section class="warranty" id="warranty">
+          <h2 class="title-h2">Гарантии</h2>
+          <div class="warranty__wrap">
+            <div class="warranty__block">
+              <h3 class="title-h3-norm">Проведенные работы</h3>
+              <ul class="warranty__list">
+                <li class="warranty__item">
+                  <span>5 лет</span>
+                  <p>На работы по устройству системы автоматического полива под ключ.</p>
+                </li>
+                <li class="warranty__item">
+                  <span>1 год</span>
+                  <p>На пуско-наладочные работы при шеф-монтаже</p>
+                </li>
+              </ul>
+            </div>
+            <div class="warranty__block">
+              <h3 class="title-h3-norm">Сервисное обслуживание</h3>
+              <ul class="warranty__list">
+                <li class="warranty__item">
+                  <span>6 мес</span>
+                  <p>Запуск системы автоматического полива под ключ</p>
+                </li>
+                <li class="warranty__item">
+                  <span>6 мес</span>
+                  <p>Консервация на зиму</p>
+                </li>
+                <li class="warranty__item">
+                  <span>6 мес</span>
+                  <p>Годовое сервисное обслуживание</p>
+                </li>
+              </ul>
+            </div>
+            <div class="warranty__block">
+              <h3 class="title-h3-norm">Оборудование</h3>
+              <ul class="warranty__list">
+                <li class="warranty__item">
+                  <span>2 года</span>
+                  <p>Насосное оборудование фирмы Espa</p>
+                </li>
+                <li class="warranty__item">
+                  <span>от 1 до 5 лет</span>
+                  <p>На оборудование фирмы Hunter</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section class="service service--about" id="watering">
+          <h2 class="title-h2 service__h2">О поливе</h2>
+          <div class="service__list">
+            <a href="#" class="service__block service__block--tall">
+              <img src="img/application-img-1.jpg" alt="Обслуживание" class="service__pic service__pic--tall" width="317">
+              <div class="service__text">
+                <h3 class="title-h3 service__title"><span>Как устроить полив стадиона</span></h3>
+                <span>Наши специалисты рассказывают специфику подбора оборудования для полива стадионов</span>
+              </div>
+            </a>
+            <div class="service__wrap service__wrap--about">
+              <a href="#" class="service__block">
+                <img src="img/application-img-2.jpg" alt="Монтаж" class="service__pic" width="317">
+                <div class="service__text">
+                  <h3 class="title-h3 service__title"><span>Общественные территории</span></h3>
+                  <span>Как поливать парки,<br>а не людей</span>
+                </div>
+              </a>
+              <a href="#" class="service__block">
+                <img src="img/application-img-3.jpg" alt="Монтаж" class="service__pic" width="317">
+                <div class="service__text">
+                  <h3 class="title-h3 service__title"><span>Сельское хозяйство</span></h3>
+                  <span>Сколько воды нужно<br>растениям на ваших фермах.</span>
+                </div>
+              </a>
+              <a href="#" class="service__block service__block--wide">
+                <img src="img/application-img-4.jpg" alt="Продажа" class="service__pic service__pic--wide" width="647">
+                <div class="service__text service__text--right">
+                  <h3 class="title-h3 service__title"><span>Частные домовладения</span></h3>
+                  <span>Особенности проектирования поливочных систем<br>для особняков и поместий.</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        
+        <section class="about" id="rational">
+          <h2 class="title-h2 about__title">План рациональной<br>системы полива</h2>
+          <p class="about__830">Правильно спроектированная, управляемая и поддерживаемая иррегационная система — это принципиально важный инструмент для достижения здорового и функционального ландшафта. Описанная здесь продукция Hunter поможет вам достичь максимально рационального использования воды.</p>
+          <div class="about__text scheme">
+            <input type="radio" name="click" id="click-1" class="scheme__click" checked>
+            <input type="radio" name="click" id="click-2" class="scheme__click">
+            <input type="radio" name="click" id="click-3" class="scheme__click">
+            <input type="radio" name="click" id="click-4" class="scheme__click">
+            <input type="radio" name="click" id="click-5" class="scheme__click">
+            <input type="radio" name="click" id="click-6" class="scheme__click">
+            <input type="radio" name="click" id="click-7" class="scheme__click">
+            <input type="radio" name="click" id="click-8" class="scheme__click">
+            
+            <figure class="scheme__block">
+              <img src="img/scheme.jpg" alt="План рациональной системы полива" class="scheme__img" width="467">
+              <label for="click-1" class="scheme__label scheme__label--1"><span>PGP Ultra и I-20</span></label>
+              <label for="click-2" class="scheme__label scheme__label--2"><span>Капельный и микрополив</span></label>
+              <label for="click-3" class="scheme__label scheme__label--3"><span>Solar Sync</span></label>
+              <label for="click-4" class="scheme__label scheme__label--4"><span>Pro-C / I-Core</span></label>
+              <label for="click-5" class="scheme__label scheme__label--5"><span>PGV, ICV, капельный полив</span></label>
+              <label for="click-6" class="scheme__label scheme__label--6"><span>Flow-Clik / Flow-Sync</span></label>
+              <label for="click-7" class="scheme__label scheme__label--7"><span>Pro-Spray и сопла</span></label>
+              <label for="click-8" class="scheme__label scheme__label--8"><span>MP Rotator</span></label>
+            </figure>
+
+            <div class="scheme__tab scheme__tab-1">
+              <h3 class="scheme__title"><a href="#">PGP Ultra</a> и <a href="#">I-20</a></h3>
+              <div class="scheme__wrap">
+                <figure class="scheme__figure">
+                  <img src="img/233.jpg" alt="PGP Ultra и I-20" height="377">
+                </figure>
+                <div class="scheme__details">
+                  <p class="scheme__title"><a href="#">I-20-06</a></p>
+                  <p class="scheme__text">Общая высота:<span>25 см</span></p>
+                  <p class="scheme__text">Высота выдвижной штанги:<span>15 см</span></p>
+                  <p class="scheme__text">Диаметр поверхностной части:<span>4,5 см</span></p>
+                  <p class="scheme__text">Размер линии подачи:<span>&frac34;"</span></p>
+                  <p class="scheme__price"><a href="#">I-20-60</a> — <span>5867 &#8381;</span></p>
+                  <a href="#" class="btn scheme__btn">Все дождеватели в каталоге</a>
+                </div>
+              </div>
+              <p>Правильно спроектированная, управляемая и поддерживаемая иррегационная система — это принципиально важный инструмент для достижения здорового и функционального ландшафта. Описанная здесь продукция Hunter поможет вам достичь максимально рационального использования воды.</p>
+            </div>
+            <div class="scheme__tab scheme__tab-2">
+              <h3 class="scheme__title"><a href="#">Капельный и микрополив</a></h3>
+              <div class="scheme__wrap">
+                <figure class="scheme__figure">
+                  <img src="img/asdasd.png" alt="Капельный и микрополив" width="160">
+                </figure>
+                <div class="scheme__details">
+                  <p class="scheme__title"><a href="#">Капельный и микрополив</a></p>
+                  <p class="scheme__text">Общая высота:<span>25 см</span></p>
+                  <p class="scheme__text">Высота выдвижной штанги:<span>15 см</span></p>
+                  <p class="scheme__text">Диаметр поверхностной части:<span>4,5 см</span></p>
+                  <p class="scheme__text">Размер линии подачи:<span>&frac34;"</span></p>
+                  <p class="scheme__price"><a href="#">I-20-60</a> — <span>5867 &#8381;</span></p>
+                  <a href="#" class="btn scheme__btn">Все дождеватели в каталоге</a>
+                </div>
+              </div>
+              <p>Правильно спроектированная, управляемая и поддерживаемая иррегационная система — это принципиально важный инструмент для достижения здорового и функционального ландшафта. Описанная здесь продукция Hunter поможет вам достичь максимально рационального использования воды.</p>
+            </div>
+            <div class="scheme__tab scheme__tab-3">
+              <h3 class="scheme__title"><a href="#">Solar Sync</a></h3>
+              <div class="scheme__wrap">
+                <figure class="scheme__figure">
+                  <img src="img/2.jpg" alt="Solar Sync" width="160">
+                </figure>
+                <div class="scheme__details">
+                  <p class="scheme__title"><a href="#">Solar Sync</a></p>
+                  <p class="scheme__text">Общая высота:<span>25 см</span></p>
+                  <p class="scheme__text">Высота выдвижной штанги:<span>15 см</span></p>
+                  <p class="scheme__text">Диаметр поверхностной части:<span>4,5 см</span></p>
+                  <p class="scheme__text">Размер линии подачи:<span>&frac34;"</span></p>
+                  <p class="scheme__price"><a href="#">I-20-60</a> — <span>5867 &#8381;</span></p>
+                  <a href="#" class="btn scheme__btn">Все дождеватели в каталоге</a>
+                </div>
+              </div>
+              <p>Правильно спроектированная, управляемая и поддерживаемая иррегационная система — это принципиально важный инструмент для достижения здорового и функционального ландшафта. Описанная здесь продукция Hunter поможет вам достичь максимально рационального использования воды.</p>
+            </div>
+            <div class="scheme__tab scheme__tab-4">
+              <h3 class="scheme__title"><a href="#">Pro-C / I-Core</a></h3>
+              <div class="scheme__wrap">
+                <figure class="scheme__figure">
+                  <img src="img/1.jpg" alt="Pro-C / I-Core" width="160">
+                </figure>
+                <div class="scheme__details">
+                  <p class="scheme__title"><a href="#">Pro-C / I-Core</a></p>
+                  <p class="scheme__text">Общая высота:<span>25 см</span></p>
+                  <p class="scheme__text">Высота выдвижной штанги:<span>15 см</span></p>
+                  <p class="scheme__text">Диаметр поверхностной части:<span>4,5 см</span></p>
+                  <p class="scheme__text">Размер линии подачи:<span>&frac34;"</span></p>
+                  <p class="scheme__price"><a href="#">I-20-60</a> — <span>5867 &#8381;</span></p>
+                  <a href="#" class="btn scheme__btn">Все дождеватели в каталоге</a>
+                </div>
+              </div>
+              <p>Правильно спроектированная, управляемая и поддерживаемая иррегационная система — это принципиально важный инструмент для достижения здорового и функционального ландшафта. Описанная здесь продукция Hunter поможет вам достичь максимально рационального использования воды.</p>
+            </div>
+            <div class="scheme__tab scheme__tab-5">
+              <h3 class="scheme__title"><a href="#">PGV, ICV, капельный полив</a></h3>
+              <div class="scheme__wrap">
+                <figure class="scheme__figure">
+                  <img src="img/5.jpg" alt="PGV, ICV, капельный полив" width="160">
+                </figure>
+                <div class="scheme__details">
+                  <p class="scheme__title"><a href="#">PGV, ICV, капельный полив</a></p>
+                  <p class="scheme__text">Общая высота:<span>25 см</span></p>
+                  <p class="scheme__text">Высота выдвижной штанги:<span>15 см</span></p>
+                  <p class="scheme__text">Диаметр поверхностной части:<span>4,5 см</span></p>
+                  <p class="scheme__text">Размер линии подачи:<span>&frac34;"</span></p>
+                  <p class="scheme__price"><a href="#">I-20-60</a> — <span>5867 &#8381;</span></p>
+                  <a href="#" class="btn scheme__btn">Все дождеватели в каталоге</a>
+                </div>
+              </div>
+              <p>Правильно спроектированная, управляемая и поддерживаемая иррегационная система — это принципиально важный инструмент для достижения здорового и функционального ландшафта. Описанная здесь продукция Hunter поможет вам достичь максимально рационального использования воды.</p>
+            </div>
+            <div class="scheme__tab scheme__tab-6">
+              <h3 class="scheme__title"><a href="#">Flow-Clik / Flow-Sync</a></h3>
+              <div class="scheme__wrap">
+                <figure class="scheme__figure">
+                  <img src="img/4.png" alt="Flow-Clik / Flow-Sync" width="160">
+                </figure>
+                <div class="scheme__details">
+                  <p class="scheme__title"><a href="#">Flow-Clik / Flow-Sync</a></p>
+                  <p class="scheme__text">Общая высота:<span>25 см</span></p>
+                  <p class="scheme__text">Высота выдвижной штанги:<span>15 см</span></p>
+                  <p class="scheme__text">Диаметр поверхностной части:<span>4,5 см</span></p>
+                  <p class="scheme__text">Размер линии подачи:<span>&frac34;"</span></p>
+                  <p class="scheme__price"><a href="#">I-20-60</a> — <span>5867 &#8381;</span></p>
+                  <a href="#" class="btn scheme__btn">Все дождеватели в каталоге</a>
+                </div>
+              </div>
+              <p>Правильно спроектированная, управляемая и поддерживаемая иррегационная система — это принципиально важный инструмент для достижения здорового и функционального ландшафта. Описанная здесь продукция Hunter поможет вам достичь максимально рационального использования воды.</p>
+            </div>
+            <div class="scheme__tab scheme__tab-7">
+              <h3 class="scheme__title"><a href="#">Pro-Spray и сопла</a></h3>
+              <div class="scheme__wrap">
+                <figure class="scheme__figure">
+                  <img src="img/3.png" alt="Pro-Spray и сопла" width="160">
+                </figure>
+                <div class="scheme__details">
+                  <p class="scheme__title"><a href="#">Pro-Spray и сопла</a></p>
+                  <p class="scheme__text">Общая высота:<span>25 см</span></p>
+                  <p class="scheme__text">Высота выдвижной штанги:<span>15 см</span></p>
+                  <p class="scheme__text">Диаметр поверхностной части:<span>4,5 см</span></p>
+                  <p class="scheme__text">Размер линии подачи:<span>&frac34;"</span></p>
+                  <p class="scheme__price"><a href="#">I-20-60</a> — <span>5867 &#8381;</span></p>
+                  <a href="#" class="btn scheme__btn">Все дождеватели в каталоге</a>
+                </div>
+              </div>
+              <p>Правильно спроектированная, управляемая и поддерживаемая иррегационная система — это принципиально важный инструмент для достижения здорового и функционального ландшафта. Описанная здесь продукция Hunter поможет вам достичь максимально рационального использования воды.</p>
+            </div>
+            <div class="scheme__tab scheme__tab-8">
+              <h3 class="scheme__title"><a href="#">MP Rotator</a></h3>
+              <div class="scheme__wrap">
+                <figure class="scheme__figure">
+                  <img src="img/fdgdfg.png" alt="MP Rotator" width="160">
+                </figure>
+                <div class="scheme__details">
+                  <p class="scheme__title"><a href="#">MP Rotator</a></p>
+                  <p class="scheme__text">Общая высота:<span>25 см</span></p>
+                  <p class="scheme__text">Высота выдвижной штанги:<span>15 см</span></p>
+                  <p class="scheme__text">Диаметр поверхностной части:<span>4,5 см</span></p>
+                  <p class="scheme__text">Размер линии подачи:<span>&frac34;"</span></p>
+                  <p class="scheme__price"><a href="#">I-20-60</a> — <span>5867 &#8381;</span></p>
+                  <a href="#" class="btn scheme__btn">Все дождеватели в каталоге</a>
+                </div>
+              </div>
+              <p>Правильно спроектированная, управляемая и поддерживаемая иррегационная система — это принципиально важный инструмент для достижения здорового и функционального ландшафта. Описанная здесь продукция Hunter поможет вам достичь максимально рационального использования воды.</p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="contacts contacts--company" id="contacts">
+          <h2 class="title-h2">Контакты</h2>
+          <div class="contacts__map contacts__map--company" id="map"></div>
+          <div class="contacts__wrap contacts__wrap--left">
+            <address class="contacts__block">
+              <a href="Tel:+78129173563" class="contacts__link">+7 (812) 917-35-63</a>
+              <a href="mailto:manager@hunterirrigation.ru" class="contacts__link">manager@hunterirrigation.ru</a>
+              <p class="contacts__address">Офис № 203, ул. Ворошилова, д. 6А., Санкт-Петербург.</p>
+            </address>
+            <div class="contacts__block">
+              <p class="contacts__address"><b>График работы:</b></p>
+              <p class="contacts__address">Понедельник–пятница — с 10:00 до 19:00<br>Суббота и воскресение — по договоренности</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+  
+  <footer class="footer wrapper">
+    <div class="footer__wrap">
+      <span class="footer__copyright">© 2017 Hunter</span>
+      <a href="#" class="footer__link">Политика конфиденциальности</a>
+    </div>
+    <div class="social">
+      <a href="#" class="social__link">
+        <img src="img/icon-facebook.svg" alt="Facebook" class="social__img" width="14" height="14">
+      </a>
+      <a href="#" class="social__link">
+        <img src="img/icon-tw.svg" alt="Twitter" class="social__img" width="23" height="23">
+      </a>
+      <a href="#" class="social__link">
+        <img src="img/icon-google.svg" alt="Google plus" class="social__img" width="23" height="23">
+      </a>
+    </div>
+  </footer>
+  
+<!-- Call window -->
+  <div style="display: none;">
+    <div class="modal" id="modal">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Отправить заявку</h2>
+        <p class="modal__text">Хотите узнать, сколько будет стоить монтаж на вашем участке? Оставте заявку, наш специалист сам позвонит Вам и ответит на все вопросы.</p>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-call" class="modal__input" required>
+            <label for="name-call" class="modal__label">Как к Вам обращаться?</label>
+          </div>
+          <div class="modal__field">
+            <input type="tel" name="phone" id="phone-call" class="modal__input modal__input--phone" required>
+            <label for="phone-call" class="modal__label">На какой номер звонить?</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-call" class="modal__input">
+            <label for="email-call" class="modal__label">Ваша почта, чтобы мы могли Вам написать</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Login window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-login">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Вход</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-login" class="modal__input" required>
+            <label for="name-login" class="modal__label">Ваш логин</label>
+          </div>
+          <div class="modal__field">
+            <input type="password" name="password" id="pass-login" class="modal__input" required>
+            <label for="pass-login" class="modal__label">Ваш пароль</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-login" class="modal__input" required>
+            <label for="email-login" class="modal__label">Ваша почта</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Войти</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Registration window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-reg">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Регистрация</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-reg" class="modal__input" required>
+            <label for="name-reg" class="modal__label">Как к Вам обращаться?</label>
+          </div>
+          <div class="modal__field">
+            <input type="password" name="password" id="pass-reg" class="modal__input" required>
+            <label for="pass-reg" class="modal__label">Ваш пароль</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-reg" class="modal__input" required>
+            <label for="email-reg" class="modal__label">Ваша почта</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  <script src="js/script.js"></script>
+  
+<!-- Modal windows -->
+  <script>
+    $(".call__btn").click(function(){
+      $(function(){
+        $("#modal").arcticmodal();
+      });
+    });
+    $(".user__link--login").click(function(){
+      $(function(){
+        $("#modal-login").arcticmodal();
+      });
+    });
+    $(".user__link--reg").click(function(){
+      $(function(){
+        $("#modal-reg").arcticmodal();
+      });
+    });
+  </script>
+  
+<!-- Map -->
+  <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
+  <script>
+    var myMap;
+    ymaps.ready(init); // API loading
+    function init () {
+      myMap = new ymaps.Map("map", {
+        center: [59.923929, 30.443736], // map center
+        zoom: 14 // Zoom
+      });
+      //custom marker
+      var myPlacemark = new ymaps.Placemark([59.923929, 30.443736] , {},
+        { iconLayout: "default#image",
+          iconImageHref: "img/pin.png",
+          iconImageSize: [186, 65],
+          iconImageOffset: [-20, -47] });     
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
+</body>
+</html>

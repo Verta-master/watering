@@ -253,6 +253,7 @@
 .about__service {
   width: 228px;
   height: 35px;
+  margin-top: 5px;
 }
 
 .about__blow {
@@ -273,4 +274,36 @@
 .about__h3 {
   margin-top: 15px;
   margin-bottom: 10px;
+}
+
+.about__comment {
+  width: 226px;
+  float: right;
+  
+  p {
+    margin-top: 0;
+  }
+}
+
+.about__comment-link {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  color: @blue;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 6px;
+    height: 14px;
+    background-image: url(../img/icon-call.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.about__title {
+  margin-bottom: 30px;
 }

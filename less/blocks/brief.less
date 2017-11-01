@@ -1,5 +1,10 @@
 .brief {
   margin-bottom: 70px;
+  
+  &--order {
+    padding-top: 25px;
+    margin-bottom: 75px;
+  }
 }
 
 .brief__form {
@@ -101,6 +106,11 @@
   width: 641px;
   height: 104px;
   margin-right: 38px;
+  
+  &--order {
+    margin-right: 0;
+    width: 528px;
+  }
 }
 
 .brief__btn {
@@ -109,6 +119,13 @@
   width: 225px;
   min-height: 51px;
   margin-top: auto;
+}
+
+.brief__btn-order {
+  margin-top: 35px;
+  float: right;
+  width: 226px;
+  height: 35px;
 }
 
 .brief__field {
@@ -142,12 +159,17 @@
   background-size: 8px 5px;
   background-position: 96% center;
   cursor: pointer;
+  
+  &--wide {
+    width: 226px;
+    margin-right: 0;
+  }
 }
 
 .brief__source {
   display: none;
   position: absolute;
-  top: 53px;
+  top: 55px;
   left: 0;
   width: 188px;
   padding: 0 10px;
@@ -155,6 +177,10 @@
   border: 1px solid @blue;
   border-top: none;
   z-index: 5;
+  
+  &--wide {
+    width: 226px;
+  }
 }
 
 .brief__drop:checked ~ .brief__source {
@@ -172,4 +198,33 @@
   background-size: 13px 13px;
   background-position: 96% center;
   cursor: pointer;
+}
+
+.brief__order {
+  margin-top: 27px;
+  padding: 30px 66px 105px 66px;
+  border: 11px solid @blue;
+  
+  .brief__input {
+    margin-right: 0;
+    width: 226px;
+  }
+  
+  .brief__field {
+    margin-right: 75px;
+  }
+  
+  .brief__wrap {
+    &--mb {
+      margin-bottom: 50px;
+    }
+    
+    &--mt {
+      margin-top: 17px;
+    }
+  }
+}
+
+.brief__title {
+  margin-bottom: 25px;
 }

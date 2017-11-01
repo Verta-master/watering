@@ -4,6 +4,10 @@
   &--app {
     margin-bottom: 83px;
   }
+  
+  &--about {
+    margin-bottom: 93px;
+  }
 }
 
 .service__item {
@@ -40,6 +44,7 @@
   &:active {
     outline: 6px solid @blue;
     outline-offset: -6px;
+    transition: ease-out 0.3s;
   }
 }
 
@@ -56,6 +61,10 @@
   justify-content: space-between;
   align-items: stretch;
   width: 795px;
+  
+  &--about {
+    width: 647px;
+  }
 }
 
 .service__title {
@@ -91,4 +100,66 @@
 
 .service__h2 {
   margin-bottom: 35px;
+}
+
+.service__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 317px;
+  height: 300px;
+  
+  &--wide {
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  &--tall {
+    height: 611px;
+  }
+  
+  &:hover,
+  &:active {
+    outline: 6px solid @blue;
+    outline-offset: -6px;
+    transition: ease-out 0.3s;
+  }
+}
+
+.service__pic {
+  display: block;
+  max-width: none;
+  min-width: 100%;
+  min-height: 300px;
+  
+  &--wide {
+    width: 647px;
+    height: auto;
+  }
+  
+  &--tall {
+    height: 611px;
+    width: auto;
+  }
+}
+
+.service__text {
+  position: absolute;
+  color: #fff;
+  bottom: 20px;
+  left: 20px;
+  max-width: 250px;
+  
+  .service__title {
+    position: static;
+    margin-bottom: 10px;
+  }
+  
+  &--right {
+    left: auto;
+    right: 20px;
+    text-align: right;
+  }
 }
