@@ -831,6 +831,9 @@ button {
 .catalog {
   margin-bottom: 67px;
 }
+.catalog--main {
+  margin-bottom: 23px;
+}
 .catalog__wrap {
   display: -ms-flexbox;
   display: flex;
@@ -860,6 +863,28 @@ button {
 }
 .catalog__list {
   padding-right: 10px;
+}
+.catalog__list--top {
+  padding-top: 60px;
+  padding-left: 65px;
+}
+.catalog__list--pr {
+  margin-right: 215px;
+}
+.catalog__main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  padding: 30px 28px;
+  margin-top: 45px;
+  background-color: #00adef;
+}
+.catalog__main .title-h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 h2,
 .title-h2 {
@@ -2882,6 +2907,9 @@ button.swiper-pagination-bullet {
 .technics {
   margin-bottom: 40px;
 }
+.technics--catalog {
+  margin-bottom: 0;
+}
 .technics__list {
   display: -ms-flexbox;
   display: flex;
@@ -2893,13 +2921,10 @@ button.swiper-pagination-bullet {
       align-content: flex-start;
   margin-top: 70px;
 }
+.technics__list--catalog {
+  margin-top: 0;
+}
 .technics__item {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  -ms-flex-align: end;
-      align-items: flex-end;
   width: 384px;
   height: 337px;
   margin-right: 22px;
@@ -2919,6 +2944,19 @@ button.swiper-pagination-bullet {
 .technics__item:active span {
   border-bottom: 1px dotted #000;
 }
+.technics__item--catalog:nth-child(3n) {
+  margin-right: 22px;
+}
+.technics__item--catalog:nth-child(17),
+.technics__item--catalog:nth-child(14),
+.technics__item--catalog:nth-child(11),
+.technics__item--catalog:nth-child(8),
+.technics__item--catalog:nth-child(5) {
+  margin-right: 0;
+}
+.technics__item--right {
+  margin-right: 0;
+}
 .technics__title {
   max-width: 270px;
   margin: 0;
@@ -2935,6 +2973,54 @@ button.swiper-pagination-bullet {
 }
 .technics__img {
   display: block;
+}
+.technics__application {
+  width: 790px;
+  padding: 28px;
+  margin-right: 22px;
+  margin-bottom: 29px;
+  background-color: rgba(0, 174, 239, 0.5);
+  float: left;
+  position: relative;
+}
+.technics__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-right: 22px;
+  background-image: url(../img/bg-catalog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.technics__h3 {
+  margin-top: 0;
+}
+.technics__ref {
+  display: block;
+  color: #fff;
+  font-size: 19px;
+  line-height: 40px;
+}
+.technics__ref span {
+  border-bottom: 1px dotted #fff;
+}
+.technics__ref:hover span,
+.technics__ref:active span {
+  border-bottom: 1px solid #fff;
+}
+.technics__link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  width: 100%;
+  height: 100%;
 }
 .page404 {
   padding-top: 75px;
@@ -3108,6 +3194,16 @@ button.swiper-pagination-bullet {
     width: 100%;
     margin-bottom: 20px;
   }
+  .technics__item--catalog:nth-child(3n),
+  .technics__item--catalog:nth-child(17),
+  .technics__item--catalog:nth-child(14),
+  .technics__item--catalog:nth-child(11),
+  .technics__item--catalog:nth-child(8),
+  .technics__item--catalog:nth-child(5) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .technics__item--right,
   .technics__item,
   .technics__item:nth-child(3n) {
     margin-right: auto;
@@ -3125,6 +3221,17 @@ button.swiper-pagination-bullet {
   }
   .page404__block:nth-of-type(3) {
     top: 130px;
+  }
+  .catalog__list--top {
+    padding-left: 0;
+  }
+  .catalog__list--pr {
+    margin-right: 0;
+  }
+  .technics__application {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 1000px) {
@@ -3295,7 +3402,7 @@ button.swiper-pagination-bullet {
   }
   .technics__title {
     font-size: 24px;
-    max-width: 230px;
+    max-width: 200px;
   }
   .service__item--block {
     height: 290px;
@@ -3313,6 +3420,9 @@ button.swiper-pagination-bullet {
   .page404__block:nth-of-type(3) {
     top: 100px;
     right: 15%;
+  }
+  .catalog__list--top {
+    padding-top: 55px;
   }
 }
 @media (max-width: 766px) {
@@ -3640,6 +3750,9 @@ button.swiper-pagination-bullet {
   .page404__block:nth-of-type(3) {
     top: 60px;
   }
+  .catalog__list--top {
+    padding-top: 65px;
+  }
 }
 @media (max-width: 480px) {
   .service__list {
@@ -3831,6 +3944,14 @@ button.swiper-pagination-bullet {
   }
   .page404__text {
     font-size: 20px;
+  }
+  .catalog__main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .catalog__list--top {
+    padding-top: 0;
+    margin-bottom: 20px;
   }
 }
 @media (orientation: landscape) {
