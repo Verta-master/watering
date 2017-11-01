@@ -12,6 +12,10 @@
   &--support {
     margin-bottom: 70px;
   }
+  
+  &--mb {
+    margin-bottom: 120px;
+  }
 }
 
 .about__figure {
@@ -69,6 +73,10 @@
   max-width: 830px;
 }
 
+.about__755 {
+  max-width: 755px;
+}
+
 .about__700 {
   max-width: 700px;
 }
@@ -83,6 +91,11 @@
   p {
     margin-top: 0;
   }
+}
+
+.about__600-pr {
+  max-width: 680px;
+  padding-right: 70px;
 }
 
 .about__logo {
@@ -224,10 +237,39 @@
   }
 }
 
+.about__pic-5 {
+  height: 528px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 377px;
+    height: 467px;
+    border: 11px solid @blue;
+    z-index: -1;
+  }
+  img {
+    margin-top: auto;
+  }
+}
+
 .about__caption {
   color: #000;
   margin-top: auto;
   margin-left: 38px;
+  
+  &--left {
+    margin-left: 0;
+    align-self: flex-start;
+  }
   
   span {
     border-bottom: 1px solid @blue;
@@ -306,4 +348,25 @@
 
 .about__title {
   margin-bottom: 30px;
+}
+
+.about__private {
+  margin-bottom: 30px;
+  
+  .title-h2 {
+    margin-bottom: 45px;
+  }
+  
+  .about__figure {
+    margin-bottom: 70px;
+  }
+  
+  .about__text {
+    padding-top: 20px;
+  }
+  
+  .title-h3-norm {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }

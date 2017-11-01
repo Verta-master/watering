@@ -1,0 +1,58 @@
+.technics {
+  margin-bottom: 40px;
+}
+
+.technics__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-top: 70px;
+}
+
+.technics__item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 384px;
+  height: 337px;
+  margin-right: 22px;
+  margin-bottom: 29px;
+  background-color: rgb(245,245,245);
+  position: relative;
+  
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+  &:nth-child(2) img,
+  &:nth-child(3) img,
+  &:nth-child(8) img {
+    margin-right: 15px;
+  }
+  
+  &:hover span,
+  &:active span {
+    border-bottom: 1px dotted #000;
+  }
+}
+
+.technics__title {
+  max-width: 270px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  
+  span {
+    border-bottom: 1px solid #000;
+  }
+}
+
+.technics__img {
+  display: block;
+}

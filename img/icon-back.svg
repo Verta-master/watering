@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.11 8.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #00adef;
+      }
+    </style>
+  </defs>
+  <title>icon-back</title>
+  <g>
+    <line class="cls-1" x1="0.73" y1="4.09" x2="21.11" y2="4.09"/>
+    <polyline class="cls-1" points="4.74 7.81 0.73 4.09 4.74 0.37"/>
+  </g>
+</svg>
