@@ -2936,6 +2936,59 @@ button.swiper-pagination-bullet {
 .technics__img {
   display: block;
 }
+.page404 {
+  padding-top: 75px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.page404 .title-h2 {
+  text-align: center;
+  margin-top: 70px;
+}
+.page404__block {
+  color: #c2c2c2;
+  max-width: 146px;
+  position: absolute;
+}
+.page404__block span {
+  display: block;
+  margin-top: 20px;
+}
+.page404__block:first-of-type {
+  text-align: right;
+  top: 485px;
+  left: 4%;
+}
+.page404__block:nth-of-type(2) {
+  top: 100px;
+  left: 31%;
+}
+.page404__block:nth-of-type(3) {
+  top: 152px;
+  right: 17%;
+}
+.page404__link {
+  color: #c2c2c2;
+  border-bottom: 1px dotted #00adef;
+}
+.page404__link:hover,
+.page404__link:active {
+  border-bottom: 1px solid #00adef;
+}
+.page404__text {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+.page404__text a {
+  color: #000;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #00adef;
+}
+.page404__text a:hover,
+.page404__text a:active {
+  border-bottom: 1px dotted #00adef;
+}
 @media (max-width: 1200px) {
   .wrapper {
     width: calc(100% - 40px);
@@ -3062,6 +3115,16 @@ button.swiper-pagination-bullet {
   }
   .service__item--block {
     width: 32%;
+  }
+  .page404__block:first-of-type {
+    top: 400px;
+    left: 2%;
+  }
+  .page404__block:nth-of-type(2) {
+    top: 80px;
+  }
+  .page404__block:nth-of-type(3) {
+    top: 130px;
   }
 }
 @media (max-width: 1000px) {
@@ -3236,6 +3299,20 @@ button.swiper-pagination-bullet {
   }
   .service__item--block {
     height: 290px;
+  }
+  .page404__block {
+    max-width: 120px;
+  }
+  .page404__block:first-of-type {
+    top: 320px;
+    left: 0;
+  }
+  .page404__block:nth-of-type(2) {
+    left: 28%;
+  }
+  .page404__block:nth-of-type(3) {
+    top: 100px;
+    right: 15%;
   }
 }
 @media (max-width: 766px) {
@@ -3555,6 +3632,14 @@ button.swiper-pagination-bullet {
   .technics__list {
     margin-top: 20px;
   }
+  .page404__block:first-of-type {
+    top: 270px;
+    text-align: left;
+  }
+  .page404__block:nth-of-type(2),
+  .page404__block:nth-of-type(3) {
+    top: 60px;
+  }
 }
 @media (max-width: 480px) {
   .service__list {
@@ -3733,6 +3818,19 @@ button.swiper-pagination-bullet {
   .service__related {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .page404__block {
+    display: none;
+  }
+  .page404 {
+    padding-top: 40px;
+  }
+  .page404 .title-h2 {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  .page404__text {
+    font-size: 20px;
   }
 }
 @media (orientation: landscape) {
