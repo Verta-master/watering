@@ -162,6 +162,21 @@
   .service__item--block {
     width: 32%;
   }
+  
+  .page404__block {
+    &:first-of-type {
+      top: 400px;
+      left: 2%;
+    }
+
+    &:nth-of-type(2) {
+      top: 80px;
+    }
+
+    &:nth-of-type(3) {
+      top: 130px;
+    }
+  }
 }
 
 //----------------------------------
@@ -377,6 +392,24 @@
   
   .service__item--block {
     height: 290px;
+  }
+  
+  .page404__block {
+    max-width: 120px;
+    
+    &:first-of-type {
+      top: 320px;
+      left: 0;
+    }
+
+    &:nth-of-type(2) {
+      left: 28%;
+    }
+
+    &:nth-of-type(3) {
+      top: 100px;
+      right: 15%;
+    }
   }
 }
 
@@ -756,6 +789,18 @@
   .technics__list {
     margin-top: 20px;
   }
+  
+  .page404__block {    
+    &:first-of-type {
+      top: 270px;
+      text-align: left;
+    }
+
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      top: 60px;
+    }
+  }
 }
 
 //-----------------------------------
@@ -975,6 +1020,23 @@
   
   .service__related {
     flex-wrap: wrap;
+  }
+  
+  .page404__block {
+    display: none;
+  }
+  
+  .page404 {
+    padding-top: 40px;
+    
+    .title-h2 {
+      margin-top: 40px;
+      font-size: 24px;
+    }
+  }
+  
+  .page404__text {
+    font-size: 20px;
   }
 }
 

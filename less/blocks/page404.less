@@ -1,0 +1,64 @@
+.page404 {
+  padding-top: 75px;
+  padding-bottom: 30px;
+  position: relative;
+  
+  .title-h2 {
+    text-align: center;
+    margin-top: 70px;
+  }
+}
+
+.page404__block {
+  color: #c2c2c2;
+  max-width: 146px;
+  position: absolute;
+  
+  span {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  &:first-of-type {
+    text-align: right;
+    top: 485px;
+    left: 4%;
+  }
+  
+  &:nth-of-type(2) {
+    top: 100px;
+    left: 31%;
+  }
+  
+  &:nth-of-type(3) {
+    top: 152px;
+    right: 17%;
+  }
+}
+
+.page404__link {
+  color: #c2c2c2;
+  border-bottom: 1px dotted @blue;
+  
+  &:hover,
+  &:active {
+    border-bottom: 1px solid @blue;
+  }
+}
+
+.page404__text {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  
+  a {
+    color: #000;
+    padding-bottom: 5px;
+    border-bottom: 1px solid @blue;
+    
+    &:hover,
+    &:active {
+      border-bottom: 1px dotted @blue;
+    }
+  }
+}
