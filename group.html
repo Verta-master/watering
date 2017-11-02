@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Системы автоматического полива HUNTER: Роторные дождеватели</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header wrapper">
+    <div class="header__top">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo" class="logo__img" width="142" height="49">
+        <p class="logo__text">Профессиональные системы полива из США и Европы</p>
+      </a>
+      <div class="user">
+        <div class="user__cart-wrap">
+          <input type="checkbox" name="open" id="open" class="user__open">
+          <label for="open" class="user__link user__link--cart"><span>Товаров в корзине: <b>12</b></span></label>
+          <div class="user__cart">
+            <form method="post" class="user__list">
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Роторный дождеватель</span>
+                  <span class="user__model">PGJ-00</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="7">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">35 600 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Клапан</span>
+                  <span class="user__model">PGV</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="2">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">16 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <div class="user__wrap">
+                  <span class="user__name">Датчик</span>
+                  <span class="user__model">Mini-click</span>
+                </div>
+                <p class="user__field">
+                  <button class="user__btn">-</button>
+                  <input type="text" name="number" class="user__input" value="3">
+                  <button class="user__btn">+</button>
+                </p>
+                <span class="user__price">24 000 &#8381;</span>
+                <button class="user__close"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="user__item">
+                <span class="user__total">75 600 &#8381;</span>
+                <a href="#" class="btn user__buy">Оформить покупку</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="user__login">
+          <a href="#" class="user__link user__link--login"><span>Вход для юр. лиц</span></a>
+          <a href="#" class="user__link user__link--reg"><span>Регистрация</span></a>
+        </div>
+      </div>
+      <div class="call">
+        <a href="Tel:+78002502932" class="call__phone call__phone--header">
+          <p class="call__number">8 800 250-29-32</p>
+          <span class="call__text">Бесплатный звонок</span>
+        </a>
+        <button type="button" class="btn call__btn">Перезвоните мне</button>
+      </div>
+    </div>
+    <nav class="menu menu--closed">
+      <button class="menu__btn"><span class="visually-hidden">Закрыть/Открыть меню</span></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="company.html" class="menu__link">Компания</a>
+          <input type="checkbox" name="menu" id="drop-1" class="menu__drop">
+          <label for="drop-1" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="company.html#about" class="menu__sublink">О нас</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#history" class="menu__sublink">История</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#projects" class="menu__sublink">Реализованные проекты</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#facilities" class="menu__sublink">Оборудование</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="company.html#contacts" class="menu__sublink">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="catalog.html" class="menu__link">Каталог</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Услуги</a>
+          <input type="checkbox" name="menu" id="drop-3" class="menu__drop">
+          <label for="drop-3" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="sell.html" class="menu__sublink">Продажа</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="project.html" class="menu__sublink">Проектирование</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="montage.html" class="menu__sublink">Монтаж</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="support.html" class="menu__sublink">Обслуживание</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="customer.html" class="menu__link">Покупателю</a>
+          <input type="checkbox" name="menu" id="drop-4" class="menu__drop">
+          <label for="drop-4" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="customer.html#order" class="menu__sublink">Как заказать</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#delivery" class="menu__sublink">Оплата и доставка</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#warranty" class="menu__sublink">Гарантии</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#watering" class="menu__sublink">О поливе</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#rational" class="menu__sublink">Рациональный полив</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="customer.html#contacts" class="menu__sublink">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Для бизнеса</a>
+          <input type="checkbox" name="menu" id="drop-5" class="menu__drop">
+          <label for="drop-5" class="menu__arrow"><span class="visually-hidden">Выпадающее меню</span></label>
+          <div class="menu__sublist-wrap">
+            <ul class="menu__sublist">
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 1</a>
+              </li>
+              <li class="menu__subitem">
+                <a href="#" class="menu__sublink">Пункт 2</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <form action="#" method="get" class="search">
+        <div class="search__wrap">
+          <input type="text" name="search" class="search__input" placeholder="Поиск">
+          <button type="submit" class="search__btn"><span class="visually-hidden">Найти</span></button>
+        </div>
+      </form>
+    </nav>
+  </header>
+  
+  <main>
+    <nav class="breadcrumbs wrapper">
+      <a href="index.html" class="breadcrumbs__link">Главная</a>
+      <a href="#" class="breadcrumbs__link">Вернуться в каталог</a>
+      <span class="breadcrumbs__link breadcrumbs__link--active">Роторные дождеватели</span>
+    </nav>
+    
+    <section class="group wrapper">
+      <h1 class="title-h2">Роторные дождеватели</h1>
+      <form action="#" method="get" class="group__search">
+        <div class="group__wrap">
+          <div class="group__field">
+            <p class="group__title">Высота дождевателя:</p>
+            <div class="group__item">
+              <input type="checkbox" name="height" id="height" class="group__check">
+              <label for="height" class="group__select">18 см</label>
+              <div class="group__drop-wrap">
+                <div class="group__drop">
+                  <a href="#" class="group__option">10 см</a>
+                  <a href="#" class="group__option">15 см</a>
+                  <a href="#" class="group__option">Любая</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group__field">
+            <p class="group__title">Диаметр штанги:</p>
+            <div class="group__item">
+              <input type="checkbox" name="diameter" id="diameter" class="group__check">
+              <label for="diameter" class="group__select">3 см</label>
+              <div class="group__drop-wrap">
+                <div class="group__drop">
+                  <a href="#" class="group__option">5 см</a>
+                  <a href="#" class="group__option">10 см</a>
+                  <a href="#" class="group__option">Любая</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group__field">
+            <p class="group__title">Высота штанги:</p>
+            <div class="group__item">
+              <input type="checkbox" name="shtanga" id="shtanga" class="group__check">
+              <label for="shtanga" class="group__select">10 см</label>
+              <div class="group__drop-wrap">
+                <div class="group__drop">
+                  <a href="#" class="group__option">15 см</a>
+                  <a href="#" class="group__option">Любая</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group__field">
+            <label for="amount" class="group__title">Цена: </label>
+            <input type="text" id="amount" class="group__input">
+            <div id="slider-range"></div>
+          </div>
+        </div>
+      </form>
+    </section>
+    
+    <ul class="case wrapper">
+      <li class="case__item">
+        <div class="case__text">
+          <h2 class="title-h2"><a href="#" class="case__link">PGJ</a></h2>
+          <p>PGJ был создан для того, чтобы предоставлять все преимущества роторных дождевателей там, где обычно принято было устанавливать веерные спринклеры. В установке водосберегающих сопел, легкую регулировку сектора полива, наличие надежной защитной резиновой крышки.</p>
+        </div>
+        <figure class="case__figure">
+          <img src="img/pgj-04_clipped.png" alt="PGJ" width="124" height="369">
+        </figure>
+        <form action="#" method="post" class="case__form">
+          <p class="case__model">Модели<span>На складе:</span></p>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-00</a> — <span class="case__price">5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn">-</button>
+              <input type="text" name="number" class="user__input" value="4567">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">18</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-04</a> — <span class="case__price">6 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">12</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-06</a> — <span class="case__price">56 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">21</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-12</a> — <span class="case__price">556 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold case__hold--disabled">нет</p>
+          </div>
+          <div class="case__total-wrap">
+            <p class="case__sum">Итого: <span class="case__total">3 456 435 &#8381;</span></p>
+            <button type="submit" class="btn case__btn">Добавить в корзину</button>
+          </div>
+        </form>
+      </li>
+      <li class="case__item">
+        <div class="case__text">
+          <h2 class="title-h2"><a href="#" class="case__link">PGP-ADJ</a></h2>
+          <p>Оригинальный продукт Hunter, с которым компания заявила о себе в 1981 году.Исключительный дизайн и впечатляющая производительность еще тогда вывели PGP на первое место среди других роторов. Постоянные усовершенствования позволяют ему оставаться лидером продаж в мире, по сей день.</p>
+        </div>
+        <figure class="case__figure">
+          <img src="img/pgp-adj.png" alt="PGJ" width="124" height="361">
+        </figure>
+        <form action="#" method="post" class="case__form">
+          <p class="case__model">Модели<span>На складе:</span></p>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-00</a> — <span class="case__price">5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn">-</button>
+              <input type="text" name="number" class="user__input" value="4567">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">18</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-04</a> — <span class="case__price">6 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">12</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-06</a> — <span class="case__price">56 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">21</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-12</a> — <span class="case__price">556 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold case__hold--disabled">нет</p>
+          </div>
+          <div class="case__total-wrap">
+            <p class="case__sum">Итого: <span class="case__total">3 456 435 &#8381;</span></p>
+            <button type="submit" class="btn case__btn">Добавить в корзину</button>
+          </div>
+        </form>
+      </li>
+      <li class="case__item">
+        <div class="case__text">
+          <h2 class="title-h2"><a href="#" class="case__link">PGP-ADJ</a></h2>
+          <p>Оригинальный продукт Hunter, с которым компания заявила о себе в 1981 году.Исключительный дизайн и впечатляющая производительность еще тогда вывели PGP на первое место среди других роторов. Постоянные усовершенствования позволяют ему оставаться лидером продаж в мире, по сей день.</p>
+        </div>
+        <figure class="case__figure">
+          <img src="img/pgp-adj.png" alt="PGJ" width="124" height="361">
+        </figure>
+        <form action="#" method="post" class="case__form">
+          <p class="case__model">Модели<span>На складе:</span></p>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-00</a> — <span class="case__price">5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn">-</button>
+              <input type="text" name="number" class="user__input" value="4567">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">18</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-04</a> — <span class="case__price">6 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">12</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-06</a> — <span class="case__price">56 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">21</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-12</a> — <span class="case__price">556 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold case__hold--disabled">нет</p>
+          </div>
+          <div class="case__total-wrap">
+            <p class="case__sum">Итого: <span class="case__total">3 456 435 &#8381;</span></p>
+            <button type="submit" class="btn case__btn">Добавить в корзину</button>
+          </div>
+        </form>
+      </li>
+      <li class="case__item">
+        <div class="case__text">
+          <h2 class="title-h2"><a href="#" class="case__link">PGP ultra</a></h2>
+          <p>SRM – это роторный дождеватель Hunter самого малого радиуса. Он был создан для того, чтобы стать удобной и эффективной альтернативой веерным поливочным головкам. SRM можно установить в одной зоне с роторами большего радиуса для того, чтобы обеспечить качественный полив больших и маленьких участков.</p>
+        </div>
+        <figure class="case__figure">
+          <img src="img/pgp-ultra.png" alt="PGP ultra" width="124" height="364">
+        </figure>
+        <form action="#" method="post" class="case__form">
+          <p class="case__model">Модели<span>На складе:</span></p>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-00</a> — <span class="case__price">5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn">-</button>
+              <input type="text" name="number" class="user__input" value="4567">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">18</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-04</a> — <span class="case__price">6 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">12</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-06</a> — <span class="case__price">56 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">21</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-12</a> — <span class="case__price">556 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold case__hold--disabled">нет</p>
+          </div>
+          <div class="case__total-wrap">
+            <p class="case__sum">Итого: <span class="case__total">3 456 435 &#8381;</span></p>
+            <button type="submit" class="btn case__btn">Добавить в корзину</button>
+          </div>
+        </form>
+      </li>
+      <li class="case__item">
+        <div class="case__text">
+          <h2 class="title-h2"><a href="#" class="case__link">I-20</a></h2>
+          <p>PGJ был создан для того, чтобы предоставлять все преимущества роторных дождевателей там, где обычно принято было устанавливать веерные спринклеры. В установке водосберегающих сопел, легкую регулировку сектора полива, наличие надежной защитной резиновой крышки.</p>
+        </div>
+        <figure class="case__figure">
+          <img src="img/i-20.png" alt="I-20" width="124" height="364">
+        </figure>
+        <form action="#" method="post" class="case__form">
+          <p class="case__model">Модели<span>На складе:</span></p>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-00</a> — <span class="case__price">5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn">-</button>
+              <input type="text" name="number" class="user__input" value="4567">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">18</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-04</a> — <span class="case__price">6 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">12</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-06</a> — <span class="case__price">56 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">21</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-12</a> — <span class="case__price">556 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold case__hold--disabled">нет</p>
+          </div>
+          <div class="case__total-wrap">
+            <p class="case__sum">Итого: <span class="case__total">3 456 435 &#8381;</span></p>
+            <button type="submit" class="btn case__btn">Добавить в корзину</button>
+          </div>
+        </form>
+      </li>
+      <li class="case__item">
+        <div class="case__text">
+          <h2 class="title-h2"><a href="#" class="case__link">I-25</a></h2>
+          <p>PGJ был создан для того, чтобы предоставлять все преимущества роторных дождевателей там, где обычно принято было устанавливать веерные спринклеры. В установке водосберегающих сопел, легкую регулировку сектора полива, наличие надежной защитной резиновой крышки.</p>
+        </div>
+        <figure class="case__figure">
+          <img src="img/i-25.png" alt="I-25" width="124" height="364">
+        </figure>
+        <form action="#" method="post" class="case__form">
+          <p class="case__model">Модели<span>На складе:</span></p>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-00</a> — <span class="case__price">5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn">-</button>
+              <input type="text" name="number" class="user__input" value="4567">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">18</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-04</a> — <span class="case__price">6 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">12</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-06</a> — <span class="case__price">56 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">21</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-12</a> — <span class="case__price">556 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold case__hold--disabled">нет</p>
+          </div>
+          <div class="case__total-wrap">
+            <p class="case__sum">Итого: <span class="case__total">3 456 435 &#8381;</span></p>
+            <button type="submit" class="btn case__btn">Добавить в корзину</button>
+          </div>
+        </form>
+      </li>
+      <li class="case__item">
+        <div class="case__text">
+          <h2 class="title-h2"><a href="#" class="case__link">I-40</a></h2>
+          <p>PGJ был создан для того, чтобы предоставлять все преимущества роторных дождевателей там, где обычно принято было устанавливать веерные спринклеры. В установке водосберегающих сопел, легкую регулировку сектора полива, наличие надежной защитной резиновой крышки.</p>
+        </div>
+        <figure class="case__figure">
+          <img src="img/pgj-04_clipped.png" alt="I-40" width="124" height="369">
+        </figure>
+        <form action="#" method="post" class="case__form">
+          <p class="case__model">Модели<span>На складе:</span></p>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-00</a> — <span class="case__price">5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn">-</button>
+              <input type="text" name="number" class="user__input" value="4567">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">18</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-04</a> — <span class="case__price">6 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">12</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-06</a> — <span class="case__price">56 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold">21</p>
+          </div>
+          <div class="case__line">
+            <p class="case__name"><a href="#">PGJ-12</a> — <span class="case__price">556 5867 &#8381;</span></p>
+            <p class="user__field">
+              <button class="user__btn" disabled>-</button>
+              <input type="text" name="number" class="user__input" value="0">
+              <button class="user__btn">+</button>
+            </p>
+            <p class="case__hold case__hold--disabled">нет</p>
+          </div>
+          <div class="case__total-wrap">
+            <p class="case__sum">Итого: <span class="case__total">3 456 435 &#8381;</span></p>
+            <button type="submit" class="btn case__btn">Добавить в корзину</button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </main>
+  
+  <footer class="footer wrapper">
+    <div class="footer__wrap">
+      <span class="footer__copyright">© 2017 Hunter</span>
+      <a href="#" class="footer__link">Политика конфиденциальности</a>
+    </div>
+    <div class="social">
+      <a href="#" class="social__link">
+        <img src="img/icon-facebook.svg" alt="Facebook" class="social__img" width="14" height="14">
+      </a>
+      <a href="#" class="social__link">
+        <img src="img/icon-tw.svg" alt="Twitter" class="social__img" width="23" height="23">
+      </a>
+      <a href="#" class="social__link">
+        <img src="img/icon-google.svg" alt="Google plus" class="social__img" width="23" height="23">
+      </a>
+    </div>
+  </footer>
+  
+<!-- Call window -->
+  <div style="display: none;">
+    <div class="modal" id="modal">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Отправить заявку</h2>
+        <p class="modal__text">Хотите узнать, сколько будет стоить монтаж на вашем участке? Оставте заявку, наш специалист сам позвонит Вам и ответит на все вопросы.</p>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-call" class="modal__input" required>
+            <label for="name-call" class="modal__label">Как к Вам обращаться?</label>
+          </div>
+          <div class="modal__field">
+            <input type="tel" name="phone" id="phone-call" class="modal__input modal__input--phone" required>
+            <label for="phone-call" class="modal__label">На какой номер звонить?</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-call" class="modal__input">
+            <label for="email-call" class="modal__label">Ваша почта, чтобы мы могли Вам написать</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Login window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-login">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Вход</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-login" class="modal__input" required>
+            <label for="name-login" class="modal__label">Ваш логин</label>
+          </div>
+          <div class="modal__field">
+            <input type="password" name="password" id="pass-login" class="modal__input" required>
+            <label for="pass-login" class="modal__label">Ваш пароль</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-login" class="modal__input" required>
+            <label for="email-login" class="modal__label">Ваша почта</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Войти</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Registration window -->
+  <div style="display: none;">
+    <div class="modal" id="modal-reg">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Регистрация</h2>
+        <form action="#" method="post" class="modal__form">
+          <div class="modal__field">
+            <input type="text" name="name" id="name-reg" class="modal__input" required>
+            <label for="name-reg" class="modal__label">Как к Вам обращаться?</label>
+          </div>
+          <div class="modal__field">
+            <input type="password" name="password" id="pass-reg" class="modal__input" required>
+            <label for="pass-reg" class="modal__label">Ваш пароль</label>
+          </div>
+          <div class="modal__field">
+            <input type="email" name="email" id="email-reg" class="modal__input" required>
+            <label for="email-reg" class="modal__label">Ваша почта</label>
+          </div>
+          <button type="submit" class="btn modal__btn">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  <script src="js/script.js"></script>
+  
+<!-- Range slider -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script>
+    $( function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 5000,
+        values: [ 150, 2500 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).val( "от " + ui.values[ 0 ] + " P до " + ui.values[ 1 ] + " P" );
+        }
+      });
+      $( "#amount" ).val( "от " + $( "#slider-range" ).slider( "values", 0 ) +
+        " P до " + $( "#slider-range" ).slider( "values", 1 ) + " P" );
+    } );
+  </script>
+  
+<!-- Modal windows -->
+  <script>
+    $(".call__btn").click(function(){
+      $(function(){
+        $("#modal").arcticmodal();
+      });
+    });
+    $(".user__link--login").click(function(){
+      $(function(){
+        $("#modal-login").arcticmodal();
+      });
+    });
+    $(".user__link--reg").click(function(){
+      $(function(){
+        $("#modal-reg").arcticmodal();
+      });
+    });
+  </script>
+</body>
+</html>

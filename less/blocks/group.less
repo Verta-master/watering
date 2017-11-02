@@ -1,0 +1,157 @@
+.group__search {
+  margin-top: 70px;
+  margin-bottom: 42px;
+  padding: 28px 30px 25px 42px;
+  background-color: @blue;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.group__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: flex-start;
+  color: #fff;
+}
+
+.group__field {
+  min-width: 240px;
+  
+  &:first-child {
+    min-width: 265px;
+  }
+}
+
+.group__title {
+  font-size: 19px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.group__check {
+  display: none;
+}
+
+.group__option {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  line-height: 40px;
+  border-bottom: 1px solid rgb(230,231,232);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:hover,
+  &:active {
+    color: @blue;
+  }
+}
+
+.group__drop-wrap {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  z-index: 5;
+  padding-top: 20px;
+}
+
+.group__drop {
+  padding: 10px 10px 0 10px;
+  background-color: #fff;
+  border: 1px solid rgb(230,231,232);
+  min-width: 75px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid rgb(230,231,232);
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg) translateX(-50%);
+  }
+}
+
+.group__select {
+  font-size: 19px;
+  line-height: 1;
+  border-bottom: 1px dotted #fff;
+  cursor: pointer;
+  
+  &:hover,
+  &:active {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.group__item {
+  position: relative;
+  
+  &:hover .group__drop-wrap {
+    display: block;
+  }
+}
+
+.group__input {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+#slider-range {
+  width: 382px;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+	z-index: 2;
+  top: -0.4em;
+  cursor: pointer;
+  outline: none;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.ui-slider .ui-slider-range {
+  border: none;
+  position: absolute;
+	z-index: 1;
+}
+
+.ui-slider-horizontal {
+  height: 4px;
+}
+
+.ui-widget-content {
+  background-color: rgba(255,255,255,0.4);
+}
+
+.ui-widget-header {
+  background-color: #fff;
+  height: 4px;
+}
+
+.ui-corner-all {
+	border-radius: 4px;
+}
+
+.ui-slider {
+	position: relative;
+}

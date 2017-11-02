@@ -1,0 +1,142 @@
+.case__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 27px 35px 0 40px;
+  margin-bottom: 35px;
+  background-color: #f1f1f2;
+  outline: 7px solid transparent;
+  outline-offset: -7px;
+  transition: outline ease-out 0.3s;
+  
+  .title-h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  &:hover {
+    background-color: #fff;
+    outline: 7px solid @blue;
+    transition: ease-out 0.3s;
+  }
+}
+
+.case__link {
+  color: #000;
+  font-size: 47px;
+  font-weight: 700;
+  border-bottom: 1px solid @blue;
+  
+  &:hover,
+  &:active {
+    border-bottom: 1px dotted @blue;
+  }
+}
+
+.case__text {
+  width: 338px;
+  padding-top: 18px;
+  
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.case__figure {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  overflow: hidden;
+  width: 290px;
+  height: 360px;
+  padding: 0;
+  padding-right: 25px;
+  margin: 0;
+}
+
+.case__form {
+  width: 447px;
+  padding-top: 18px;
+  position: relative;
+}
+
+.case__model {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-top: 0;
+  
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+  }
+}
+
+.case__line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.case__name {
+  font-size: 23px;
+  line-height: 35px;
+  width: 240px;
+  padding-right: 10px;
+  margin: 0;
+  
+  a {
+    color: #000;
+    border-bottom: 1px solid @blue;
+    
+    &:hover,
+    &:active {
+      border-bottom: 1px dotted @blue;
+    }
+  }
+  
+  span {
+    font-weight: 700;
+  }
+}
+
+.case__hold {
+  margin: 0;
+  margin-left: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  
+  &--disabled {
+    color: @grey;
+  }
+}
+
+.case__total-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 24px;
+  margin-top: 20px;
+  border-top: 1px solid #dbdcde;
+}
+
+.case__btn {
+  margin-left: auto;
+  width: 163px;
+}
+
+.case__sum {
+  font-size: 15px;
+  margin: 0;
+}
+
+.case__total {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
