@@ -14,7 +14,7 @@
     border-bottom: 1px dotted @blue;
   }
   
-  &:nth-child(n+2) {
+  &--arrow {
     padding-left: 30px;
     position: relative;
     
@@ -32,12 +32,7 @@
   
   &--active {
     border-bottom: none;
-    padding-left: 0 !important;
-    
-    &::before {
-      display: none;
-    }
-    
+
     &:hover,
     &:active {
       border-bottom: none;
